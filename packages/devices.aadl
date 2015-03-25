@@ -14,7 +14,6 @@ public
 			Period => 100 ms;
 			Deadline => 100 ms;
 			--Compute_Execution_Time => 20us .. 50us;
-
 	end d_GPS;
 
 	device implementation d_GPS.impl
