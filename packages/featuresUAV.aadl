@@ -1,0 +1,61 @@
+package featuresUAV
+public
+	feature group pg_UAVBehavior
+		features
+			dp_AngularVelocityOut: out data port;
+			dp_PositionOut: out data port;
+			dp_VelocityOut: out data port;
+			dp_AtitudeOut: out data port;
+	end pg_UAVBehavior;
+
+	feature group pg_UAVBehaviorInverse
+		features
+			dp_AngularVelocityIn: in data port;
+			dp_PositionIn: in data port;
+			dp_VelocityIn: in data port;
+			dp_AtitudeIn: in data port;
+			inverse of pg_UAVBehavior
+	end pg_UAVBehaviorInverse;
+
+	feature group pg_UAVRawData
+		features
+			dp_SonarRawOut: out data port;
+			dp_IMURawOut: out data port;
+			dp_GPSRawOut: out data port;
+	end pg_UAVRawData;
+
+	feature group pg_UAVRawDataInverse
+		features
+			dp_SonarRawIn: in data port;
+			dp_IMURawIn: in data port;
+			dp_GPSRawIn: in data port;
+			inverse of pg_UAVRawData
+	end pg_UAVRawDataInverse;
+
+	feature group fg_ControlMessagesIn
+		features
+			dp_Force_RIn: in data port;
+			dp_Force_LIn: in data port;
+			dp_Angle_RIn: in data port;
+			dp_Angle_LIn: in data port;
+	end fg_ControlMessagesIn;
+
+	feature group fg_ControlMessagesOut
+		features
+			dp_Force_RIn: out data port;
+			dp_Force_LIn: out data port;
+			dp_Angle_RIn: out data port;
+			dp_Angle_LIn: out data port;
+			inverse of fg_ControlMessagesIn
+	end fg_ControlMessagesOut;
+
+	feature group fg_SystemMessagesOut
+		features
+			dp_AngularVelocityServoOut: out data port;
+			dp_AngleServoOut: out data port;
+			dp_SonarRawOut: out data port;
+			dp_IMURawOut: out data port;
+			dp_GPSRawOut: out data port;
+	end fg_SystemMessagesOut;
+
+end featuresUAV;

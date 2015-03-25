@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="ASCII"?>
+<instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" xmi:id="_RA-AoNMYEeSaQc2dAUY7zw" name="LowLevelProcessing_impl_Instance" category="system">
+  <componentInstance xmi:id="_RBSJsNMYEeSaQc2dAUY7zw" name="thisI2C1" srcConnectionInstance="_RB8RANMYEeSaQc2dAUY7zw _RB84ENMYEeSaQc2dAUY7zw _RB84EtMYEeSaQc2dAUY7zw" category="bus">
+    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedBusSubcomponent.0"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBWbINMYEeSaQc2dAUY7zw" name="thisI2C2" srcConnectionInstance="_RB-GMNMYEeSaQc2dAUY7zw _RB-GMtMYEeSaQc2dAUY7zw" category="bus">
+    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedBusSubcomponent.1"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBXCMNMYEeSaQc2dAUY7zw" name="thisRS2321" srcConnectionInstance="_RB-tQNMYEeSaQc2dAUY7zw" category="bus">
+    <ownedPropertyAssociation xmi:id="_REWr0NMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Latency"/>
+      <ownedValue xmi:id="_REWr0dMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_REWr0tMYEeSaQc2dAUY7zw">
+          <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_REWr09MYEeSaQc2dAUY7zw" value="1">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+          </minimum>
+          <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_REWr1NMYEeSaQc2dAUY7zw" value="1">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+          </maximum>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_REXS4NMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/SEI.aadl#SEI.BandWidthCapacity"/>
+      <ownedValue xmi:id="_REX58NMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:RealLiteral" xmi:id="_REX58dMYEeSaQc2dAUY7zw" value="5.0">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.13/@ownedLiteral.2"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_REYhANMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Transmission_Time"/>
+      <ownedValue xmi:id="_REhD4NMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:RecordValue" xmi:id="_REhD4dMYEeSaQc2dAUY7zw">
+          <ownedFieldValue xmi:id="_REhD4tMYEeSaQc2dAUY7zw">
+            <property href="../../Plugin_Resources/Communication_Properties.aadl#//@ownedProperty.14/@ownedPropertyType/@ownedField.0"/>
+            <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_REhD49MYEeSaQc2dAUY7zw">
+              <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_REhD5NMYEeSaQc2dAUY7zw" value="200">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </minimum>
+              <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_REhD5dMYEeSaQc2dAUY7zw" value="500">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </maximum>
+            </ownedValue>
+          </ownedFieldValue>
+          <ownedFieldValue xmi:id="_REhD5tMYEeSaQc2dAUY7zw">
+            <property href="../../Plugin_Resources/Communication_Properties.aadl#//@ownedProperty.14/@ownedPropertyType/@ownedField.1"/>
+            <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_REhD59MYEeSaQc2dAUY7zw">
+              <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_REhD6NMYEeSaQc2dAUY7zw" value="2">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </minimum>
+              <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_REhD6dMYEeSaQc2dAUY7zw" value="5">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </maximum>
+            </ownedValue>
+          </ownedFieldValue>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <featureInstance xmi:id="_RBXpQNMYEeSaQc2dAUY7zw" name="busAccess" dstConnectionInstance="_RCBwkNMYEeSaQc2dAUY7zw" category="busAccess" direction="in out">
+      <ownedPropertyAssociation xmi:id="_REnxkNMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue xmi:id="_REnxkdMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_REnxktMYEeSaQc2dAUY7zw">
+            <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_REnxk9MYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_REnxlNMYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:BusAccess" href="../packages/embeddedPlatform.aadl#//@ownedPublicSection/@ownedClassifier.10/@ownedBusAccess.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedBusSubcomponent.2"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBXpQdMYEeSaQc2dAUY7zw" name="thisRS2322" srcConnectionInstance="_RB_UUNMYEeSaQc2dAUY7zw _RB_7YNMYEeSaQc2dAUY7zw" category="bus">
+    <ownedPropertyAssociation xmi:id="_REt4MNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Latency"/>
+      <ownedValue xmi:id="_REt4MdMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_REt4MtMYEeSaQc2dAUY7zw">
+          <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_REt4M9MYEeSaQc2dAUY7zw" value="1">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+          </minimum>
+          <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_REt4NNMYEeSaQc2dAUY7zw" value="1">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+          </maximum>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_REufQNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/SEI.aadl#SEI.BandWidthCapacity"/>
+      <ownedValue xmi:id="_REvGUNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:RealLiteral" xmi:id="_REvGUdMYEeSaQc2dAUY7zw" value="5.0">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.13/@ownedLiteral.2"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_REvGUtMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Transmission_Time"/>
+      <ownedValue xmi:id="_RE3pMNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:RecordValue" xmi:id="_RE3pMdMYEeSaQc2dAUY7zw">
+          <ownedFieldValue xmi:id="_RE3pMtMYEeSaQc2dAUY7zw">
+            <property href="../../Plugin_Resources/Communication_Properties.aadl#//@ownedProperty.14/@ownedPropertyType/@ownedField.0"/>
+            <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RE3pM9MYEeSaQc2dAUY7zw">
+              <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RE3pNNMYEeSaQc2dAUY7zw" value="200">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </minimum>
+              <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RE3pNdMYEeSaQc2dAUY7zw" value="500">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </maximum>
+            </ownedValue>
+          </ownedFieldValue>
+          <ownedFieldValue xmi:id="_RE3pNtMYEeSaQc2dAUY7zw">
+            <property href="../../Plugin_Resources/Communication_Properties.aadl#//@ownedProperty.14/@ownedPropertyType/@ownedField.1"/>
+            <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RE3pN9MYEeSaQc2dAUY7zw">
+              <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RE3pONMYEeSaQc2dAUY7zw" value="2">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </minimum>
+              <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RE3pOdMYEeSaQc2dAUY7zw" value="5">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </maximum>
+            </ownedValue>
+          </ownedFieldValue>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedBusSubcomponent.3"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBYQUNMYEeSaQc2dAUY7zw" name="thisRS2323" srcConnectionInstance="_RCAicNMYEeSaQc2dAUY7zw _RCBJgNMYEeSaQc2dAUY7zw" category="bus">
+    <ownedPropertyAssociation xmi:id="_RE-98NMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Latency"/>
+      <ownedValue xmi:id="_RE-98dMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RE-98tMYEeSaQc2dAUY7zw">
+          <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RE-989MYEeSaQc2dAUY7zw" value="1">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+          </minimum>
+          <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RE-99NMYEeSaQc2dAUY7zw" value="1">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+          </maximum>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_RE-99dMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/SEI.aadl#SEI.BandWidthCapacity"/>
+      <ownedValue xmi:id="_RE_lANMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:RealLiteral" xmi:id="_RE_lAdMYEeSaQc2dAUY7zw" value="5.0">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.13/@ownedLiteral.2"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_RFAMENMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Transmission_Time"/>
+      <ownedValue xmi:id="_RFIu8NMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:RecordValue" xmi:id="_RFIu8dMYEeSaQc2dAUY7zw">
+          <ownedFieldValue xmi:id="_RFIu8tMYEeSaQc2dAUY7zw">
+            <property href="../../Plugin_Resources/Communication_Properties.aadl#//@ownedProperty.14/@ownedPropertyType/@ownedField.0"/>
+            <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RFIu89MYEeSaQc2dAUY7zw">
+              <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RFIu9NMYEeSaQc2dAUY7zw" value="200">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </minimum>
+              <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RFIu9dMYEeSaQc2dAUY7zw" value="500">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </maximum>
+            </ownedValue>
+          </ownedFieldValue>
+          <ownedFieldValue xmi:id="_RFIu9tMYEeSaQc2dAUY7zw">
+            <property href="../../Plugin_Resources/Communication_Properties.aadl#//@ownedProperty.14/@ownedPropertyType/@ownedField.1"/>
+            <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RFIu99MYEeSaQc2dAUY7zw">
+              <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RFIu-NMYEeSaQc2dAUY7zw" value="2">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </minimum>
+              <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RFIu-dMYEeSaQc2dAUY7zw" value="5">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </maximum>
+            </ownedValue>
+          </ownedFieldValue>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedBusSubcomponent.4"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBY3YNMYEeSaQc2dAUY7zw" name="thisRS485" srcConnectionInstance="_RCBwkNMYEeSaQc2dAUY7zw _RCCXoNMYEeSaQc2dAUY7zw _RCC-sNMYEeSaQc2dAUY7zw" category="bus">
+    <ownedPropertyAssociation xmi:id="_RFLyQNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Latency"/>
+      <ownedValue xmi:id="_RFLyQdMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RFLyQtMYEeSaQc2dAUY7zw">
+          <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RFLyQ9MYEeSaQc2dAUY7zw" value="1">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+          </minimum>
+          <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RFLyRNMYEeSaQc2dAUY7zw" value="1">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+          </maximum>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_RFLyRdMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/SEI.aadl#SEI.BandWidthCapacity"/>
+      <ownedValue xmi:id="_RFMZUNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:RealLiteral" xmi:id="_RFMZUdMYEeSaQc2dAUY7zw" value="5.0">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.13/@ownedLiteral.2"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_RFMZUtMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Transmission_Time"/>
+      <ownedValue xmi:id="_RFU8MNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:RecordValue" xmi:id="_RFU8MdMYEeSaQc2dAUY7zw">
+          <ownedFieldValue xmi:id="_RFU8MtMYEeSaQc2dAUY7zw">
+            <property href="../../Plugin_Resources/Communication_Properties.aadl#//@ownedProperty.14/@ownedPropertyType/@ownedField.0"/>
+            <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RFU8M9MYEeSaQc2dAUY7zw">
+              <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RFU8NNMYEeSaQc2dAUY7zw" value="200">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </minimum>
+              <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RFU8NdMYEeSaQc2dAUY7zw" value="500">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </maximum>
+            </ownedValue>
+          </ownedFieldValue>
+          <ownedFieldValue xmi:id="_RFU8NtMYEeSaQc2dAUY7zw">
+            <property href="../../Plugin_Resources/Communication_Properties.aadl#//@ownedProperty.14/@ownedPropertyType/@ownedField.1"/>
+            <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RFU8N9MYEeSaQc2dAUY7zw">
+              <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RFU8ONMYEeSaQc2dAUY7zw" value="2">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </minimum>
+              <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RFU8OdMYEeSaQc2dAUY7zw" value="5">
+                <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+              </maximum>
+            </ownedValue>
+          </ownedFieldValue>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedBusSubcomponent.5"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBZecNMYEeSaQc2dAUY7zw" name="di_RadioControl" category="device">
+    <ownedPropertyAssociation xmi:id="_RFYmkNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Period"/>
+      <ownedValue xmi:id="_RFZ0sNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RFZ0sdMYEeSaQc2dAUY7zw" value="2500">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.2"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_RFbp4NMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Deadline"/>
+      <ownedValue xmi:id="_RFc4ANMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RFc4AdMYEeSaQc2dAUY7zw" value="2500">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.2"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <featureInstance xmi:id="_RBdI0NMYEeSaQc2dAUY7zw" name="dp_RadioControlOut" srcConnectionInstance="_RCJFUNMYEeSaQc2dAUY7zw" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.0"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBdI0dMYEeSaQc2dAUY7zw" name="di_Servo_R" category="device">
+    <ownedPropertyAssociation xmi:id="_RFgiYNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Period"/>
+      <ownedValue xmi:id="_RFhwgNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RFhwgdMYEeSaQc2dAUY7zw" value="5">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_RFjlsNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Deadline"/>
+      <ownedValue xmi:id="_RFla4NMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RFla4dMYEeSaQc2dAUY7zw" value="5">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <featureInstance xmi:id="_RBdv4NMYEeSaQc2dAUY7zw" name="dp_Servo_RInOut" srcConnectionInstance="_RCKTcNMYEeSaQc2dAUY7zw" dstConnectionInstance="_RCjVANMYEeSaQc2dAUY7zw" direction="in out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.14/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBdv4dMYEeSaQc2dAUY7zw" name="busAccess" dstConnectionInstance="_RCCXoNMYEeSaQc2dAUY7zw" category="busAccess" direction="in out">
+      <ownedPropertyAssociation xmi:id="_RFn3INMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue xmi:id="_RFn3IdMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RFn3ItMYEeSaQc2dAUY7zw">
+            <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RFn3I9MYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RFn3JNMYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:BusAccess" href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.14/@ownedBusAccess.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.1"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBeW8NMYEeSaQc2dAUY7zw" name="di_Servo_L" category="device">
+    <ownedPropertyAssociation xmi:id="_RFqTYNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Period"/>
+      <ownedValue xmi:id="_RFsIkNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RFsIkdMYEeSaQc2dAUY7zw" value="5">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_RFtWsNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Deadline"/>
+      <ownedValue xmi:id="_RFvL4NMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RFvL4dMYEeSaQc2dAUY7zw" value="5">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <featureInstance xmi:id="_RBe-ANMYEeSaQc2dAUY7zw" name="dp_Servo_LInOut" srcConnectionInstance="_RCMIoNMYEeSaQc2dAUY7zw" dstConnectionInstance="_RCj8ENMYEeSaQc2dAUY7zw" direction="in out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.16/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBe-AdMYEeSaQc2dAUY7zw" name="busAccess" dstConnectionInstance="_RCC-sNMYEeSaQc2dAUY7zw" category="busAccess" direction="in out">
+      <ownedPropertyAssociation xmi:id="_RFxoINMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue xmi:id="_RFxoIdMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RFxoItMYEeSaQc2dAUY7zw">
+            <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RFxoI9MYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RFxoJNMYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:BusAccess" href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.16/@ownedBusAccess.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.2"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBe-AtMYEeSaQc2dAUY7zw" name="di_Sonar" category="device">
+    <ownedPropertyAssociation xmi:id="_RF0EYNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Period"/>
+      <ownedValue xmi:id="_RF15kNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RF15kdMYEeSaQc2dAUY7zw" value="2500">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.2"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_RF3HsNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Deadline"/>
+      <ownedValue xmi:id="_RF484NMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RF484dMYEeSaQc2dAUY7zw" value="2500">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.2"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <featureInstance xmi:id="_RBflENMYEeSaQc2dAUY7zw" name="dp_SonarOut" srcConnectionInstance="_RCNWwNMYEeSaQc2dAUY7zw" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBflEdMYEeSaQc2dAUY7zw" name="busAccess" dstConnectionInstance="_RCBJgNMYEeSaQc2dAUY7zw" category="busAccess" direction="in out">
+      <ownedPropertyAssociation xmi:id="_RF7ZINMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue xmi:id="_RF7ZIdMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RF7ZItMYEeSaQc2dAUY7zw">
+            <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RF7ZI9MYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RF7ZJNMYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:BusAccess" href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedBusAccess.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.3"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBgMINMYEeSaQc2dAUY7zw" name="di_ESC_R" category="device">
+    <ownedPropertyAssociation xmi:id="_RF91YNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Period"/>
+      <ownedValue xmi:id="_RF_qkNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RF_qkdMYEeSaQc2dAUY7zw" value="5">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_RGA4sNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Deadline"/>
+      <ownedValue xmi:id="_RGCt4NMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RGCt4dMYEeSaQc2dAUY7zw" value="5">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <featureInstance xmi:id="_RBgzMNMYEeSaQc2dAUY7zw" name="dp_ESC_RInOut" dstConnectionInstance="_RChf0NMYEeSaQc2dAUY7zw" direction="in out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.10/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBgzMdMYEeSaQc2dAUY7zw" name="busAccess" dstConnectionInstance="_RB84EtMYEeSaQc2dAUY7zw" category="busAccess" direction="in out">
+      <feature xsi:type="aadl2:BusAccess" href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.10/@ownedBusAccess.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.4"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBgzMtMYEeSaQc2dAUY7zw" name="di_ESC_L" category="device">
+    <ownedPropertyAssociation xmi:id="_RGFxMNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Period"/>
+      <ownedValue xmi:id="_RGHmYNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RGHmYdMYEeSaQc2dAUY7zw" value="5">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_RGI0gNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Deadline"/>
+      <ownedValue xmi:id="_RGKpsNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RGKpsdMYEeSaQc2dAUY7zw" value="5">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <featureInstance xmi:id="_RBhaQNMYEeSaQc2dAUY7zw" name="dp_ESC_LInOut" dstConnectionInstance="_RCit8NMYEeSaQc2dAUY7zw" direction="in out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.12/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBhaQdMYEeSaQc2dAUY7zw" name="busAccess" dstConnectionInstance="_RB84ENMYEeSaQc2dAUY7zw" category="busAccess" direction="in out">
+      <feature xsi:type="aadl2:BusAccess" href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.12/@ownedBusAccess.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.5"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBiBUNMYEeSaQc2dAUY7zw" name="di_GPS" category="device">
+    <ownedPropertyAssociation xmi:id="_RGNtANMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Period"/>
+      <ownedValue xmi:id="_RGPiMNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RGPiMdMYEeSaQc2dAUY7zw" value="100">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_RGRXYNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Deadline"/>
+      <ownedValue xmi:id="_RGSlgNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RGSlgdMYEeSaQc2dAUY7zw" value="100">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <featureInstance xmi:id="_RBiBUdMYEeSaQc2dAUY7zw" name="dp_GPSInOut" srcConnectionInstance="_RCOk4NMYEeSaQc2dAUY7zw" dstFlowSpec="_RBioYNMYEeSaQc2dAUY7zw" direction="in out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBiBUtMYEeSaQc2dAUY7zw" name="busAccess" dstConnectionInstance="_RB_7YNMYEeSaQc2dAUY7zw" category="busAccess" direction="in out">
+      <ownedPropertyAssociation xmi:id="_RGVo0NMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue xmi:id="_RGVo0dMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RGVo0tMYEeSaQc2dAUY7zw">
+            <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RGVo09MYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RGVo1NMYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:BusAccess" href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedBusAccess.0"/>
+    </featureInstance>
+    <flowSpecification xmi:id="_RBioYNMYEeSaQc2dAUY7zw" name="raw_data" destination="_RBiBUdMYEeSaQc2dAUY7zw">
+      <flowSpecification href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedFlowSpecification.0"/>
+    </flowSpecification>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.6"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBioYdMYEeSaQc2dAUY7zw" name="di_IMU" category="device">
+    <ownedPropertyAssociation xmi:id="_RGXeANMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Period"/>
+      <ownedValue xmi:id="_RGZTMNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RGZTMdMYEeSaQc2dAUY7zw" value="2500">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.2"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_RGbIYNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Deadline"/>
+      <ownedValue xmi:id="_RGc9kNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RGc9kdMYEeSaQc2dAUY7zw" value="2500">
+          <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.2"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <featureInstance xmi:id="_RBjPcNMYEeSaQc2dAUY7zw" name="dp_IMUInOut" srcConnectionInstance="_RCPzANMYEeSaQc2dAUY7zw" dstFlowSpec="_RBjPctMYEeSaQc2dAUY7zw" direction="in out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBjPcdMYEeSaQc2dAUY7zw" name="busAccess" dstConnectionInstance="_RB-GMtMYEeSaQc2dAUY7zw" category="busAccess" direction="in out">
+      <feature xsi:type="aadl2:BusAccess" href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedBusAccess.0"/>
+    </featureInstance>
+    <flowSpecification xmi:id="_RBjPctMYEeSaQc2dAUY7zw" name="raw_data_IMU" destination="_RBjPcNMYEeSaQc2dAUY7zw">
+      <flowSpecification href="../packages/devices.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0"/>
+    </flowSpecification>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.7"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBjPc9MYEeSaQc2dAUY7zw" name="pi_Communication_impl" category="process">
+    <featureInstance xmi:id="_RBryUNMYEeSaQc2dAUY7zw" name="pg_ControlMessagesOut" category="featureGroup" direction="in out">
+      <featureInstance xmi:id="_RBtAcNMYEeSaQc2dAUY7zw" name="dp_Force_RIn" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.5/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBtAcdMYEeSaQc2dAUY7zw" name="dp_Force_LIn" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.5/@ownedDataPort.1"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBtActMYEeSaQc2dAUY7zw" name="dp_Angle_RIn" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.5/@ownedDataPort.2"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBtAc9MYEeSaQc2dAUY7zw" name="dp_Angle_LIn" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.5/@ownedDataPort.3"/>
+      </featureInstance>
+      <feature xsi:type="aadl2:FeatureGroup" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedFeatureGroup.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBtAdNMYEeSaQc2dAUY7zw" name="pg_UAVRawData" category="featureGroup" direction="in out">
+      <featureInstance xmi:id="_RBtngNMYEeSaQc2dAUY7zw" name="dp_SonarRawIn">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBtngdMYEeSaQc2dAUY7zw" name="dp_IMURawIn">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedDataPort.1"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBtngtMYEeSaQc2dAUY7zw" name="dp_GPSRawIn">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedDataPort.2"/>
+      </featureInstance>
+      <feature xsi:type="aadl2:FeatureGroup" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedFeatureGroup.1"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBtng9MYEeSaQc2dAUY7zw" name="dp_AngularVelocityServoIn">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBtnhNMYEeSaQc2dAUY7zw" name="dp_AngleServoIn">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.1"/>
+    </featureInstance>
+    <componentInstance xmi:id="_RBoH8NMYEeSaQc2dAUY7zw" name="ti_CommBeaglebone" category="thread">
+      <ownedPropertyAssociation xmi:id="_RGgA4NMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Deployment_Properties.aadl#Deployment_Properties.Actual_Processor_Binding"/>
+        <ownedValue xmi:id="_RGgn8NMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:ListValue" xmi:id="_RGgn8dMYEeSaQc2dAUY7zw">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" xmi:id="_RGgn8tMYEeSaQc2dAUY7zw" referencedInstanceObject="_RBx5AdMYEeSaQc2dAUY7zw"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_RGidINMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Period"/>
+        <ownedValue xmi:id="_RGkSUNMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RGkSUdMYEeSaQc2dAUY7zw" value="100">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_RGlgcNMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Deadline"/>
+        <ownedValue xmi:id="_RGnVoNMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RGnVodMYEeSaQc2dAUY7zw" value="100">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_RGojwNMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+        <ownedValue xmi:id="_RGpx4NMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:NamedValue" xmi:id="_RGpx4dMYEeSaQc2dAUY7zw">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.3/@ownedLiteral.0"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_RGvRcNMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
+        <ownedValue xmi:id="_RGvRcdMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RGvRctMYEeSaQc2dAUY7zw">
+            <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RGvRc9MYEeSaQc2dAUY7zw" value="3900">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.2"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RGvRdNMYEeSaQc2dAUY7zw" value="4010">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.2"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <featureInstance xmi:id="_RBrLQNMYEeSaQc2dAUY7zw" name="dp_AngularVelocityServoOut" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLQdMYEeSaQc2dAUY7zw" name="dp_AngularVelocityServoIn" dstConnectionInstance="_RCoNgNMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.1"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLQtMYEeSaQc2dAUY7zw" name="dp_AngleServoOut" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.2"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLQ9MYEeSaQc2dAUY7zw" name="dp_AngleServoIn" dstConnectionInstance="_RClxQNMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.3"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLRNMYEeSaQc2dAUY7zw" name="dp_SonarRawOut" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.4"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLRdMYEeSaQc2dAUY7zw" name="dp_ForceB_ROut" srcConnectionInstance="_RCZkANMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.5"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLRtMYEeSaQc2dAUY7zw" name="dp_ForceB_LOut" srcConnectionInstance="_RCcnUNMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.6"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLR9MYEeSaQc2dAUY7zw" name="dp_ServoB_ROut" srcConnectionInstance="_RCdOYNMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.7"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLSNMYEeSaQc2dAUY7zw" name="dp_ServoB_LOut" srcConnectionInstance="_RCecgNMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.8"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLSdMYEeSaQc2dAUY7zw" name="dp_SonarRawIn" dstConnectionInstance="_RCrQ0NMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.9"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLStMYEeSaQc2dAUY7zw" name="dp_ForceB_RIn">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.10"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLS9MYEeSaQc2dAUY7zw" name="dp_ForceB_LIn">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.11"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLTNMYEeSaQc2dAUY7zw" name="dp_ServoB_RIn">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.12"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLTdMYEeSaQc2dAUY7zw" name="dp_ServoB_LIn">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.13"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLTtMYEeSaQc2dAUY7zw" name="dp_GPSRawOut" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.14"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLT9MYEeSaQc2dAUY7zw" name="dp_IMURawOut" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.15"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLUNMYEeSaQc2dAUY7zw" name="dp_GPSRawIn" dstConnectionInstance="_RCm_YNMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.16"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBrLUdMYEeSaQc2dAUY7zw" name="dp_IMURawIn" dstConnectionInstance="_RCviQNMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.17"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.5/@ownedThreadSubcomponent.0"/>
+      <index>0</index>
+    </componentInstance>
+    <subcomponent xsi:type="aadl2:ProcessSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedProcessSubcomponent.0"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBtnhdMYEeSaQc2dAUY7zw" name="pi_Control_impl" category="process">
+    <featureInstance xmi:id="_RBu1rdMYEeSaQc2dAUY7zw" name="pg_ControlMessagesIn" category="featureGroup" direction="in out">
+      <featureInstance xmi:id="_RBvcsNMYEeSaQc2dAUY7zw" name="dp_Force_RIn">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBvcsdMYEeSaQc2dAUY7zw" name="dp_Force_LIn">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.1"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBvcstMYEeSaQc2dAUY7zw" name="dp_Angle_RIn">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.2"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBvcs9MYEeSaQc2dAUY7zw" name="dp_Angle_LIn">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.3"/>
+      </featureInstance>
+      <feature xsi:type="aadl2:FeatureGroup" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedFeatureGroup.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBvctNMYEeSaQc2dAUY7zw" name="pg_UAVBehavior" category="featureGroup" direction="in out">
+      <featureInstance xmi:id="_RBvctdMYEeSaQc2dAUY7zw" name="dp_AngularVelocityIn">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBvcttMYEeSaQc2dAUY7zw" name="dp_PositionIn">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.1"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBvct9MYEeSaQc2dAUY7zw" name="dp_VelocityIn">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.2"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBvcuNMYEeSaQc2dAUY7zw" name="dp_AtitudeIn">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.3"/>
+      </featureInstance>
+      <feature xsi:type="aadl2:FeatureGroup" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedFeatureGroup.1"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBvcudMYEeSaQc2dAUY7zw" name="dp_RadioControlSignalIn">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBvcutMYEeSaQc2dAUY7zw" name="dp_ESC_RInOut" direction="in out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.1"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBvcu9MYEeSaQc2dAUY7zw" name="dp_ESC_LInOut" direction="in out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.2"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBvcvNMYEeSaQc2dAUY7zw" name="dp_Servo_ROut" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.3"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBvcvdMYEeSaQc2dAUY7zw" name="dp_Servo_LOut" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.4"/>
+    </featureInstance>
+    <componentInstance xmi:id="_RBuOkNMYEeSaQc2dAUY7zw" name="ti_RadioControl" category="thread">
+      <ownedPropertyAssociation xmi:id="_RGyUwNMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Deployment_Properties.aadl#Deployment_Properties.Actual_Processor_Binding"/>
+        <ownedValue xmi:id="_RGy70NMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:ListValue" xmi:id="_RGy70dMYEeSaQc2dAUY7zw">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" xmi:id="_RGy70tMYEeSaQc2dAUY7zw" referencedInstanceObject="_RBx5AdMYEeSaQc2dAUY7zw"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_RG0xANMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Period"/>
+        <ownedValue xmi:id="_RG2mMNMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RG2mMdMYEeSaQc2dAUY7zw" value="5">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_RG30UNMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Deadline"/>
+        <ownedValue xmi:id="_RG5pgNMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RG5pgdMYEeSaQc2dAUY7zw" value="5">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_RG63oNMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+        <ownedValue xmi:id="_RG8FwNMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:NamedValue" xmi:id="_RG8FwdMYEeSaQc2dAUY7zw">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.3/@ownedLiteral.0"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_RHA-QNMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
+        <ownedValue xmi:id="_RHA-QdMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RHA-QtMYEeSaQc2dAUY7zw">
+            <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RHA-Q9MYEeSaQc2dAUY7zw" value="800">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.2"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RHA-RNMYEeSaQc2dAUY7zw" value="1150">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.2"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <featureInstance xmi:id="_RBu1oNMYEeSaQc2dAUY7zw" name="dp_RadioControlSignalIn" dstConnectionInstance="_RCpboNMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBu1odMYEeSaQc2dAUY7zw" name="dp_AngularVelocityIn" dstConnectionInstance="_RCqpwNMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.1"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBu1otMYEeSaQc2dAUY7zw" name="dp_PositionIn" dstConnectionInstance="_RCse8NMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.2"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBu1o9MYEeSaQc2dAUY7zw" name="dp_VelocityIn" dstConnectionInstance="_RCuUINMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.3"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBu1pNMYEeSaQc2dAUY7zw" name="dp_ForceB_RIn" dstConnectionInstance="_RCZkANMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.4"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBu1pdMYEeSaQc2dAUY7zw" name="dp_ForceB_LIn" dstConnectionInstance="_RCcnUNMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.5"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBu1ptMYEeSaQc2dAUY7zw" name="dp_ServoB_RIn" dstConnectionInstance="_RCdOYNMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.6"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBu1p9MYEeSaQc2dAUY7zw" name="dp_ServoB_LIn" dstConnectionInstance="_RCecgNMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.7"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBu1qNMYEeSaQc2dAUY7zw" name="dp_AtitudeIn" dstConnectionInstance="_RCu7MNMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.8"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBu1qdMYEeSaQc2dAUY7zw" name="dp_ForceROut" srcConnectionInstance="_RChf0NMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.9"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBu1qtMYEeSaQc2dAUY7zw" name="dp_ForceLOut" srcConnectionInstance="_RCit8NMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.10"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBu1q9MYEeSaQc2dAUY7zw" name="dp_AngleROut" srcConnectionInstance="_RCjVANMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.11"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBu1rNMYEeSaQc2dAUY7zw" name="dp_AngleLOut" srcConnectionInstance="_RCj8ENMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.12"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedThreadSubcomponent.0"/>
+      <index>0</index>
+    </componentInstance>
+    <subcomponent xsi:type="aadl2:ProcessSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedProcessSubcomponent.1"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBvcvtMYEeSaQc2dAUY7zw" name="pi_Input_impl" category="process">
+    <featureInstance xmi:id="_RBxR7tMYEeSaQc2dAUY7zw" name="pg_UAVBehavior" category="featureGroup" direction="in out">
+      <featureInstance xmi:id="_RBx48NMYEeSaQc2dAUY7zw" name="dp_AngularVelocityOut" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBx48dMYEeSaQc2dAUY7zw" name="dp_PositionOut" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.1"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBx48tMYEeSaQc2dAUY7zw" name="dp_VelocityOut" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.2"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBx489MYEeSaQc2dAUY7zw" name="dp_AtitudeOut" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.3"/>
+      </featureInstance>
+      <feature xsi:type="aadl2:FeatureGroup" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedFeatureGroup.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBx49NMYEeSaQc2dAUY7zw" name="pg_UAVRawData" category="featureGroup" direction="in out">
+      <featureInstance xmi:id="_RBx49dMYEeSaQc2dAUY7zw" name="dp_SonarRawOut" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBx49tMYEeSaQc2dAUY7zw" name="dp_IMURawOut" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.1"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBx499MYEeSaQc2dAUY7zw" name="dp_GPSRawOut" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/featuresUAV.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.2"/>
+      </featureInstance>
+      <feature xsi:type="aadl2:FeatureGroup" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedFeatureGroup.1"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBx4-NMYEeSaQc2dAUY7zw" name="dp_AngularVelocityServoOut" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBx4-dMYEeSaQc2dAUY7zw" name="dp_RadioControlSignalOut" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.1"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBx4-tMYEeSaQc2dAUY7zw" name="dp_RadioControlIn">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.2"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBx4-9MYEeSaQc2dAUY7zw" name="dp_AngleServoOut" srcConnectionInstance="_RClxQNMYEeSaQc2dAUY7zw" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.3"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBx4_NMYEeSaQc2dAUY7zw" name="dp_Servo_RInOut" direction="in out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.4"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBx4_dMYEeSaQc2dAUY7zw" name="dp_Servo_LInOut" direction="in out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.5"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBx4_tMYEeSaQc2dAUY7zw" name="dp_IMUInOut" direction="in out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.6"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBx4_9MYEeSaQc2dAUY7zw" name="dp_GPSInOut" direction="in out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.7"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBx5ANMYEeSaQc2dAUY7zw" name="dp_SonarIn">
+      <feature xsi:type="aadl2:DataPort" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.8"/>
+    </featureInstance>
+    <componentInstance xmi:id="_RBwDwNMYEeSaQc2dAUY7zw" name="ti_GPS" category="thread">
+      <ownedPropertyAssociation xmi:id="_RHEBkNMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Deployment_Properties.aadl#Deployment_Properties.Actual_Processor_Binding"/>
+        <ownedValue xmi:id="_RHEBkdMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:ListValue" xmi:id="_RHEBktMYEeSaQc2dAUY7zw">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" xmi:id="_RHEBk9MYEeSaQc2dAUY7zw" referencedInstanceObject="_RBx5AdMYEeSaQc2dAUY7zw"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_RHF2wNMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Period"/>
+        <ownedValue xmi:id="_RHHr8NMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RHHr8dMYEeSaQc2dAUY7zw" value="100">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_RHJhINMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Deadline"/>
+        <ownedValue xmi:id="_RHLWUNMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RHLWUdMYEeSaQc2dAUY7zw" value="100">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_RHMkcNMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+        <ownedValue xmi:id="_RHNykNMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:NamedValue" xmi:id="_RHNykdMYEeSaQc2dAUY7zw">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.3/@ownedLiteral.0"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <featureInstance xmi:id="_RBwq0NMYEeSaQc2dAUY7zw" name="dp_GPSRawOut" srcConnectionInstance="_RCm_YNMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBwq0dMYEeSaQc2dAUY7zw" name="dp_GPSInOut" dstConnectionInstance="_RCOk4NMYEeSaQc2dAUY7zw" direction="in out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.1"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedThreadSubcomponent.0"/>
+      <index>0</index>
+    </componentInstance>
+    <componentInstance xmi:id="_RBwq0tMYEeSaQc2dAUY7zw" name="ti_ReadData" category="thread">
+      <ownedPropertyAssociation xmi:id="_RHOZoNMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Deployment_Properties.aadl#Deployment_Properties.Actual_Processor_Binding"/>
+        <ownedValue xmi:id="_RHOZodMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:ListValue" xmi:id="_RHOZotMYEeSaQc2dAUY7zw">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" xmi:id="_RHOZo9MYEeSaQc2dAUY7zw" referencedInstanceObject="_RBx5AdMYEeSaQc2dAUY7zw"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_RHQ14NMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Period"/>
+        <ownedValue xmi:id="_RHSrENMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RHSrEdMYEeSaQc2dAUY7zw" value="2500">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.2"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_RHT5MNMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Deadline"/>
+        <ownedValue xmi:id="_RHVuYNMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_RHVuYdMYEeSaQc2dAUY7zw" value="2500">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.2"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_RHW8gNMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+        <ownedValue xmi:id="_RHYKoNMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:NamedValue" xmi:id="_RHYKodMYEeSaQc2dAUY7zw">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.3/@ownedLiteral.0"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_RHdDINMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
+        <ownedValue xmi:id="_RHdDIdMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RHdDItMYEeSaQc2dAUY7zw">
+            <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RHdDI9MYEeSaQc2dAUY7zw" value="940">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.2"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RHdDJNMYEeSaQc2dAUY7zw" value="1050">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.2"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <featureInstance xmi:id="_RBxR4NMYEeSaQc2dAUY7zw" name="dp_AngularVelocityServoOut" srcConnectionInstance="_RCoNgNMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBxR4dMYEeSaQc2dAUY7zw" name="dp_RadioControlSignalOut" srcConnectionInstance="_RCpboNMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.1"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBxR4tMYEeSaQc2dAUY7zw" name="dp_AngularVelocityOut" srcConnectionInstance="_RCqpwNMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.2"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBxR49MYEeSaQc2dAUY7zw" name="dp_RadioControlIn" dstConnectionInstance="_RCJFUNMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.3"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBxR5NMYEeSaQc2dAUY7zw" name="dp_AngleServoOut" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.4"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBxR5dMYEeSaQc2dAUY7zw" name="dp_SonarRawOut" srcConnectionInstance="_RCrQ0NMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.5"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBxR5tMYEeSaQc2dAUY7zw" name="dp_PositionOut" srcConnectionInstance="_RCse8NMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.6"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBxR59MYEeSaQc2dAUY7zw" name="dp_VelocityOut" srcConnectionInstance="_RCuUINMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.7"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBxR6NMYEeSaQc2dAUY7zw" name="dp_AtitudeOut" srcConnectionInstance="_RCu7MNMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.8"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBxR6dMYEeSaQc2dAUY7zw" name="dp_Servo_RIn" dstConnectionInstance="_RCKTcNMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.9"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBxR6tMYEeSaQc2dAUY7zw" name="dp_Servo_LIn" dstConnectionInstance="_RCMIoNMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.10"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBxR69MYEeSaQc2dAUY7zw" name="dp_IMURawOut" srcConnectionInstance="_RCviQNMYEeSaQc2dAUY7zw" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.11"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBxR7NMYEeSaQc2dAUY7zw" name="dp_IMUInOut" dstConnectionInstance="_RCPzANMYEeSaQc2dAUY7zw" direction="in out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.12"/>
+      </featureInstance>
+      <featureInstance xmi:id="_RBxR7dMYEeSaQc2dAUY7zw" name="dp_SonarIn" dstConnectionInstance="_RCNWwNMYEeSaQc2dAUY7zw">
+        <feature xsi:type="aadl2:DataPort" href="../packages/systemThreads.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.13"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedThreadSubcomponent.1"/>
+      <index>0</index>
+    </componentInstance>
+    <subcomponent xsi:type="aadl2:ProcessSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedProcessSubcomponent.2"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_RBx5AdMYEeSaQc2dAUY7zw" name="DISCOVERY_ARM" category="processor">
+    <ownedPropertyAssociation xmi:id="_RHe4UNMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Deployment_Properties.aadl#Deployment_Properties.Scheduling_Protocol"/>
+      <ownedValue xmi:id="_RHgtgNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:ListValue" xmi:id="_RHgtgdMYEeSaQc2dAUY7zw">
+          <ownedListElement xsi:type="aadl2:NamedValue" xmi:id="_RHgtgtMYEeSaQc2dAUY7zw">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.7/@ownedLiteral.5"/>
+          </ownedListElement>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_RHgtg9MYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/Deployment_Properties.aadl#Deployment_Properties.Preemptive_Scheduler"/>
+      <ownedValue xmi:id="_RHgthNMYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:BooleanLiteral" xmi:id="_RHgthdMYEeSaQc2dAUY7zw" value="true"/>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xmi:id="_RHgthtMYEeSaQc2dAUY7zw">
+      <property href="../../Plugin_Resources/SEI.aadl#SEI.MIPSCapacity"/>
+      <ownedValue xmi:id="_RHgth9MYEeSaQc2dAUY7zw">
+        <ownedValue xsi:type="aadl2:RealLiteral" xmi:id="_RHgtiNMYEeSaQc2dAUY7zw" value="210.0">
+          <unit href="../../Plugin_Resources/SEI.aadl#//@ownedPropertyType.4/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+    </ownedPropertyAssociation>
+    <featureInstance xmi:id="_RBzHENMYEeSaQc2dAUY7zw" name="BI2C1" dstConnectionInstance="_RB8RANMYEeSaQc2dAUY7zw" category="busAccess" direction="in out">
+      <feature xsi:type="aadl2:BusAccess" href="../packages/embeddedPlatform.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedBusAccess.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBzuINMYEeSaQc2dAUY7zw" name="BI2C2" dstConnectionInstance="_RB-GMNMYEeSaQc2dAUY7zw" category="busAccess" direction="in out">
+      <feature xsi:type="aadl2:BusAccess" href="../packages/embeddedPlatform.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedBusAccess.1"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBzuIdMYEeSaQc2dAUY7zw" name="BRS2321" dstConnectionInstance="_RB-tQNMYEeSaQc2dAUY7zw" category="busAccess" direction="in out">
+      <ownedPropertyAssociation xmi:id="_RHiisNMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue xmi:id="_RHjJwNMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RHjJwdMYEeSaQc2dAUY7zw">
+            <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RHjJwtMYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RHjJw9MYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:BusAccess" href="../packages/embeddedPlatform.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedBusAccess.2"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBzuItMYEeSaQc2dAUY7zw" name="BRS2322" dstConnectionInstance="_RB_UUNMYEeSaQc2dAUY7zw" category="busAccess" direction="in out">
+      <ownedPropertyAssociation xmi:id="_RHkX4NMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue xmi:id="_RHkX4dMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RHkX4tMYEeSaQc2dAUY7zw">
+            <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RHkX49MYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RHkX5NMYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:BusAccess" href="../packages/embeddedPlatform.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedBusAccess.3"/>
+    </featureInstance>
+    <featureInstance xmi:id="_RBzuI9MYEeSaQc2dAUY7zw" name="BRS2323" dstConnectionInstance="_RCAicNMYEeSaQc2dAUY7zw" category="busAccess" direction="in out">
+      <ownedPropertyAssociation xmi:id="_RHmNENMYEeSaQc2dAUY7zw">
+        <property href="../../Plugin_Resources/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue xmi:id="_RHmNEdMYEeSaQc2dAUY7zw">
+          <ownedValue xsi:type="aadl2:RangeValue" xmi:id="_RHmNEtMYEeSaQc2dAUY7zw">
+            <minimum xsi:type="aadl2:IntegerLiteral" xmi:id="_RHmNE9MYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" xmi:id="_RHmNFNMYEeSaQc2dAUY7zw" value="1">
+              <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:BusAccess" href="../packages/embeddedPlatform.aadl#//@ownedPublicSection/@ownedClassifier.0/@ownedBusAccess.4"/>
+    </featureInstance>
+    <componentInstance xmi:id="_RBygANMYEeSaQc2dAUY7zw" name="thisRam" category="memory">
+      <subcomponent xsi:type="aadl2:MemorySubcomponent" href="../packages/embeddedPlatform.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedMemorySubcomponent.0"/>
+      <index>0</index>
+    </componentInstance>
+    <subcomponent xsi:type="aadl2:ProcessorSubcomponent" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedProcessorSubcomponent.0"/>
+    <index>0</index>
+  </componentInstance>
+  <connectionInstance xmi:id="_RB8RANMYEeSaQc2dAUY7zw" name="thisI2C1 -> DISCOVERY_ARM.BI2C1" complete="true" kind="accessConnection" destination="_RBzHENMYEeSaQc2dAUY7zw" source="_RBSJsNMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RB8RAdMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBSJsNMYEeSaQc2dAUY7zw" destination="_RBzHENMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:AccessConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.0"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RB84ENMYEeSaQc2dAUY7zw" name="thisI2C1 -> di_ESC_L.busAccess" complete="true" kind="accessConnection" destination="_RBhaQdMYEeSaQc2dAUY7zw" source="_RBSJsNMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RB84EdMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBSJsNMYEeSaQc2dAUY7zw" destination="_RBhaQdMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:AccessConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.6"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RB84EtMYEeSaQc2dAUY7zw" name="thisI2C1 -> di_ESC_R.busAccess" complete="true" kind="accessConnection" destination="_RBgzMdMYEeSaQc2dAUY7zw" source="_RBSJsNMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RB84E9MYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBSJsNMYEeSaQc2dAUY7zw" destination="_RBgzMdMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:AccessConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.7"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RB-GMNMYEeSaQc2dAUY7zw" name="thisI2C2 -> DISCOVERY_ARM.BI2C2" complete="true" kind="accessConnection" destination="_RBzuINMYEeSaQc2dAUY7zw" source="_RBWbINMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RB-GMdMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBWbINMYEeSaQc2dAUY7zw" destination="_RBzuINMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:AccessConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.1"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RB-GMtMYEeSaQc2dAUY7zw" name="thisI2C2 -> di_IMU.busAccess" complete="true" kind="accessConnection" destination="_RBjPcdMYEeSaQc2dAUY7zw" source="_RBWbINMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RB-GM9MYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBWbINMYEeSaQc2dAUY7zw" destination="_RBjPcdMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:AccessConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.8"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RB-tQNMYEeSaQc2dAUY7zw" name="thisRS2321 -> DISCOVERY_ARM.BRS2321" complete="true" kind="accessConnection" destination="_RBzuIdMYEeSaQc2dAUY7zw" source="_RBXCMNMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RB-tQdMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBXCMNMYEeSaQc2dAUY7zw" destination="_RBzuIdMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:AccessConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.2"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RB_UUNMYEeSaQc2dAUY7zw" name="thisRS2322 -> DISCOVERY_ARM.BRS2322" complete="true" kind="accessConnection" destination="_RBzuItMYEeSaQc2dAUY7zw" source="_RBXpQdMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RB_UUdMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBXpQdMYEeSaQc2dAUY7zw" destination="_RBzuItMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:AccessConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.3"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RB_7YNMYEeSaQc2dAUY7zw" name="thisRS2322 -> di_GPS.busAccess" complete="true" kind="accessConnection" destination="_RBiBUtMYEeSaQc2dAUY7zw" source="_RBXpQdMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RB_7YdMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBXpQdMYEeSaQc2dAUY7zw" destination="_RBiBUtMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:AccessConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.11"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCAicNMYEeSaQc2dAUY7zw" name="thisRS2323 -> DISCOVERY_ARM.BRS2323" complete="true" kind="accessConnection" destination="_RBzuI9MYEeSaQc2dAUY7zw" source="_RBYQUNMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCAicdMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBYQUNMYEeSaQc2dAUY7zw" destination="_RBzuI9MYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:AccessConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.4"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCBJgNMYEeSaQc2dAUY7zw" name="thisRS2323 -> di_Sonar.busAccess" complete="true" kind="accessConnection" destination="_RBflEdMYEeSaQc2dAUY7zw" source="_RBYQUNMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCBJgdMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBYQUNMYEeSaQc2dAUY7zw" destination="_RBflEdMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:AccessConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.12"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCBwkNMYEeSaQc2dAUY7zw" name="thisRS485 -> thisRS2321.busAccess" complete="true" kind="accessConnection" destination="_RBXpQNMYEeSaQc2dAUY7zw" source="_RBY3YNMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCBwkdMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBY3YNMYEeSaQc2dAUY7zw" destination="_RBXpQNMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:AccessConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.5"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCCXoNMYEeSaQc2dAUY7zw" name="thisRS485 -> di_Servo_R.busAccess" complete="true" kind="accessConnection" destination="_RBdv4dMYEeSaQc2dAUY7zw" source="_RBY3YNMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCCXodMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBY3YNMYEeSaQc2dAUY7zw" destination="_RBdv4dMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:AccessConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.9"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCC-sNMYEeSaQc2dAUY7zw" name="thisRS485 -> di_Servo_L.busAccess" complete="true" kind="accessConnection" destination="_RBe-AdMYEeSaQc2dAUY7zw" source="_RBY3YNMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCC-sdMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBY3YNMYEeSaQc2dAUY7zw" destination="_RBe-AdMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:AccessConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.10"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCJFUNMYEeSaQc2dAUY7zw" name="di_RadioControl.dp_RadioControlOut -> pi_Input_impl.ti_ReadData.dp_RadioControlIn" complete="true" kind="portConnection" destination="_RBxR49MYEeSaQc2dAUY7zw" source="_RBdI0NMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCJFUdMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBdI0NMYEeSaQc2dAUY7zw" destination="_RBx4-tMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.6"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCJFUtMYEeSaQc2dAUY7zw" context="_RBvcvtMYEeSaQc2dAUY7zw" source="_RBx4-tMYEeSaQc2dAUY7zw" destination="_RBxR49MYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.4"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCKTcNMYEeSaQc2dAUY7zw" name="di_Servo_R.dp_Servo_RInOut -> pi_Input_impl.ti_ReadData.dp_Servo_RIn" complete="true" kind="portConnection" destination="_RBxR6dMYEeSaQc2dAUY7zw" source="_RBdv4NMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCKTcdMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBdv4NMYEeSaQc2dAUY7zw" destination="_RBx4_NMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.0"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCKTctMYEeSaQc2dAUY7zw" context="_RBvcvtMYEeSaQc2dAUY7zw" source="_RBx4_NMYEeSaQc2dAUY7zw" destination="_RBxR6dMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.5"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCMIoNMYEeSaQc2dAUY7zw" name="di_Servo_L.dp_Servo_LInOut -> pi_Input_impl.ti_ReadData.dp_Servo_LIn" complete="true" kind="portConnection" destination="_RBxR6tMYEeSaQc2dAUY7zw" source="_RBe-ANMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCMIodMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBe-ANMYEeSaQc2dAUY7zw" destination="_RBx4_dMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.1"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCMIotMYEeSaQc2dAUY7zw" context="_RBvcvtMYEeSaQc2dAUY7zw" source="_RBx4_dMYEeSaQc2dAUY7zw" destination="_RBxR6tMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.6"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCNWwNMYEeSaQc2dAUY7zw" name="di_Sonar.dp_SonarOut -> pi_Input_impl.ti_ReadData.dp_SonarIn" complete="true" kind="portConnection" destination="_RBxR7dMYEeSaQc2dAUY7zw" source="_RBflENMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCNWwdMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBflENMYEeSaQc2dAUY7zw" destination="_RBx5ANMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.5"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCNWwtMYEeSaQc2dAUY7zw" context="_RBvcvtMYEeSaQc2dAUY7zw" source="_RBx5ANMYEeSaQc2dAUY7zw" destination="_RBxR7dMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.2"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCOk4NMYEeSaQc2dAUY7zw" name="di_GPS.dp_GPSInOut -> pi_Input_impl.ti_GPS.dp_GPSInOut" complete="true" kind="portConnection" destination="_RBwq0dMYEeSaQc2dAUY7zw" source="_RBiBUdMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCOk4dMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBiBUdMYEeSaQc2dAUY7zw" destination="_RBx4_9MYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.4"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCOk4tMYEeSaQc2dAUY7zw" context="_RBvcvtMYEeSaQc2dAUY7zw" source="_RBx4_9MYEeSaQc2dAUY7zw" destination="_RBwq0dMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.0"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCPzANMYEeSaQc2dAUY7zw" name="di_IMU.dp_IMUInOut -> pi_Input_impl.ti_ReadData.dp_IMUInOut" complete="true" kind="portConnection" destination="_RBxR7NMYEeSaQc2dAUY7zw" source="_RBjPcNMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCPzAdMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBjPcNMYEeSaQc2dAUY7zw" destination="_RBx4_tMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.7"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCPzAtMYEeSaQc2dAUY7zw" context="_RBvcvtMYEeSaQc2dAUY7zw" source="_RBx4_tMYEeSaQc2dAUY7zw" destination="_RBxR7NMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.3"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCZkANMYEeSaQc2dAUY7zw" name="pi_Communication_impl.ti_CommBeaglebone.dp_ForceB_ROut -> pi_Control_impl.ti_RadioControl.dp_ForceB_RIn" complete="true" kind="portConnection" destination="_RBu1pNMYEeSaQc2dAUY7zw" source="_RBrLRdMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCZkAdMYEeSaQc2dAUY7zw" context="_RBjPc9MYEeSaQc2dAUY7zw" source="_RBrLRdMYEeSaQc2dAUY7zw" destination="_RBtAcNMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.5/@ownedPortConnection.5"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCZkAtMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBtAcNMYEeSaQc2dAUY7zw" destination="_RBvcsNMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:FeatureGroupConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedFeatureGroupConnection.2"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCZkA9MYEeSaQc2dAUY7zw" context="_RBtnhdMYEeSaQc2dAUY7zw" source="_RBvcsNMYEeSaQc2dAUY7zw" destination="_RBu1pNMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedPortConnection.9"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCcnUNMYEeSaQc2dAUY7zw" name="pi_Communication_impl.ti_CommBeaglebone.dp_ForceB_LOut -> pi_Control_impl.ti_RadioControl.dp_ForceB_LIn" complete="true" kind="portConnection" destination="_RBu1pdMYEeSaQc2dAUY7zw" source="_RBrLRtMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCcnUdMYEeSaQc2dAUY7zw" context="_RBjPc9MYEeSaQc2dAUY7zw" source="_RBrLRtMYEeSaQc2dAUY7zw" destination="_RBtAcdMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.5/@ownedPortConnection.6"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCcnUtMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBtAcdMYEeSaQc2dAUY7zw" destination="_RBvcsdMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:FeatureGroupConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedFeatureGroupConnection.2"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCcnU9MYEeSaQc2dAUY7zw" context="_RBtnhdMYEeSaQc2dAUY7zw" source="_RBvcsdMYEeSaQc2dAUY7zw" destination="_RBu1pdMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedPortConnection.10"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCdOYNMYEeSaQc2dAUY7zw" name="pi_Communication_impl.ti_CommBeaglebone.dp_ServoB_ROut -> pi_Control_impl.ti_RadioControl.dp_ServoB_RIn" complete="true" kind="portConnection" destination="_RBu1ptMYEeSaQc2dAUY7zw" source="_RBrLR9MYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCdOYdMYEeSaQc2dAUY7zw" context="_RBjPc9MYEeSaQc2dAUY7zw" source="_RBrLR9MYEeSaQc2dAUY7zw" destination="_RBtActMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.5/@ownedPortConnection.7"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCdOYtMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBtActMYEeSaQc2dAUY7zw" destination="_RBvcstMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:FeatureGroupConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedFeatureGroupConnection.2"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCdOY9MYEeSaQc2dAUY7zw" context="_RBtnhdMYEeSaQc2dAUY7zw" source="_RBvcstMYEeSaQc2dAUY7zw" destination="_RBu1ptMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedPortConnection.11"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCecgNMYEeSaQc2dAUY7zw" name="pi_Communication_impl.ti_CommBeaglebone.dp_ServoB_LOut -> pi_Control_impl.ti_RadioControl.dp_ServoB_LIn" complete="true" kind="portConnection" destination="_RBu1p9MYEeSaQc2dAUY7zw" source="_RBrLSNMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCecgdMYEeSaQc2dAUY7zw" context="_RBjPc9MYEeSaQc2dAUY7zw" source="_RBrLSNMYEeSaQc2dAUY7zw" destination="_RBtAc9MYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.5/@ownedPortConnection.8"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCecgtMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBtAc9MYEeSaQc2dAUY7zw" destination="_RBvcs9MYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:FeatureGroupConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedFeatureGroupConnection.2"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCecg9MYEeSaQc2dAUY7zw" context="_RBtnhdMYEeSaQc2dAUY7zw" source="_RBvcs9MYEeSaQc2dAUY7zw" destination="_RBu1p9MYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedPortConnection.12"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RChf0NMYEeSaQc2dAUY7zw" name="pi_Control_impl.ti_RadioControl.dp_ForceROut -> di_ESC_R.dp_ESC_RInOut" complete="true" kind="portConnection" destination="_RBgzMNMYEeSaQc2dAUY7zw" source="_RBu1qdMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RChf0dMYEeSaQc2dAUY7zw" context="_RBtnhdMYEeSaQc2dAUY7zw" source="_RBu1qdMYEeSaQc2dAUY7zw" destination="_RBvcutMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedPortConnection.4"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RChf0tMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBvcutMYEeSaQc2dAUY7zw" destination="_RBgzMNMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.9"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCit8NMYEeSaQc2dAUY7zw" name="pi_Control_impl.ti_RadioControl.dp_ForceLOut -> di_ESC_L.dp_ESC_LInOut" complete="true" kind="portConnection" destination="_RBhaQNMYEeSaQc2dAUY7zw" source="_RBu1qtMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCit8dMYEeSaQc2dAUY7zw" context="_RBtnhdMYEeSaQc2dAUY7zw" source="_RBu1qtMYEeSaQc2dAUY7zw" destination="_RBvcu9MYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedPortConnection.5"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCit8tMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBvcu9MYEeSaQc2dAUY7zw" destination="_RBhaQNMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.8"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCjVANMYEeSaQc2dAUY7zw" name="pi_Control_impl.ti_RadioControl.dp_AngleROut -> di_Servo_R.dp_Servo_RInOut" complete="true" kind="portConnection" destination="_RBdv4NMYEeSaQc2dAUY7zw" source="_RBu1q9MYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCjVAdMYEeSaQc2dAUY7zw" context="_RBtnhdMYEeSaQc2dAUY7zw" source="_RBu1q9MYEeSaQc2dAUY7zw" destination="_RBvcvNMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedPortConnection.6"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCjVAtMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBvcvNMYEeSaQc2dAUY7zw" destination="_RBdv4NMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.2"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCj8ENMYEeSaQc2dAUY7zw" name="pi_Control_impl.ti_RadioControl.dp_AngleLOut -> di_Servo_L.dp_Servo_LInOut" complete="true" kind="portConnection" destination="_RBe-ANMYEeSaQc2dAUY7zw" source="_RBu1rNMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCj8EdMYEeSaQc2dAUY7zw" context="_RBtnhdMYEeSaQc2dAUY7zw" source="_RBu1rNMYEeSaQc2dAUY7zw" destination="_RBvcvdMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedPortConnection.7"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCj8EtMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBvcvdMYEeSaQc2dAUY7zw" destination="_RBe-ANMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.3"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RClxQNMYEeSaQc2dAUY7zw" name="pi_Input_impl.dp_AngleServoOut -> pi_Communication_impl.ti_CommBeaglebone.dp_AngleServoIn" complete="true" kind="portConnection" destination="_RBrLQ9MYEeSaQc2dAUY7zw" source="_RBx4-9MYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RClxQdMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBx4-9MYEeSaQc2dAUY7zw" destination="_RBtnhNMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.11"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RClxQtMYEeSaQc2dAUY7zw" context="_RBjPc9MYEeSaQc2dAUY7zw" source="_RBtnhNMYEeSaQc2dAUY7zw" destination="_RBrLQ9MYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.5/@ownedPortConnection.3"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCm_YNMYEeSaQc2dAUY7zw" name="pi_Input_impl.ti_GPS.dp_GPSRawOut -> pi_Communication_impl.ti_CommBeaglebone.dp_GPSRawIn" complete="true" kind="portConnection" destination="_RBrLUNMYEeSaQc2dAUY7zw" source="_RBwq0NMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCm_YdMYEeSaQc2dAUY7zw" context="_RBvcvtMYEeSaQc2dAUY7zw" source="_RBwq0NMYEeSaQc2dAUY7zw" destination="_RBx499MYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.1"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCm_YtMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBx499MYEeSaQc2dAUY7zw" destination="_RBtngtMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:FeatureGroupConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedFeatureGroupConnection.1"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCm_Y9MYEeSaQc2dAUY7zw" context="_RBjPc9MYEeSaQc2dAUY7zw" source="_RBtngtMYEeSaQc2dAUY7zw" destination="_RBrLUNMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.5/@ownedPortConnection.2"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCoNgNMYEeSaQc2dAUY7zw" name="pi_Input_impl.ti_ReadData.dp_AngularVelocityServoOut -> pi_Communication_impl.ti_CommBeaglebone.dp_AngularVelocityServoIn" complete="true" kind="portConnection" destination="_RBrLQdMYEeSaQc2dAUY7zw" source="_RBxR4NMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCoNgdMYEeSaQc2dAUY7zw" context="_RBvcvtMYEeSaQc2dAUY7zw" source="_RBxR4NMYEeSaQc2dAUY7zw" destination="_RBx4-NMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.14"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCoNgtMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBx4-NMYEeSaQc2dAUY7zw" destination="_RBtng9MYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.12"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCoNg9MYEeSaQc2dAUY7zw" context="_RBjPc9MYEeSaQc2dAUY7zw" source="_RBtng9MYEeSaQc2dAUY7zw" destination="_RBrLQdMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.5/@ownedPortConnection.4"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCpboNMYEeSaQc2dAUY7zw" name="pi_Input_impl.ti_ReadData.dp_RadioControlSignalOut -> pi_Control_impl.ti_RadioControl.dp_RadioControlSignalIn" complete="true" kind="portConnection" destination="_RBu1oNMYEeSaQc2dAUY7zw" source="_RBxR4dMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCpbodMYEeSaQc2dAUY7zw" context="_RBvcvtMYEeSaQc2dAUY7zw" source="_RBxR4dMYEeSaQc2dAUY7zw" destination="_RBx4-dMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.13"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCpbotMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBx4-dMYEeSaQc2dAUY7zw" destination="_RBvcudMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.10"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCpbo9MYEeSaQc2dAUY7zw" context="_RBtnhdMYEeSaQc2dAUY7zw" source="_RBvcudMYEeSaQc2dAUY7zw" destination="_RBu1oNMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedPortConnection.8"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCqpwNMYEeSaQc2dAUY7zw" name="pi_Input_impl.ti_ReadData.dp_AngularVelocityOut -> pi_Control_impl.ti_RadioControl.dp_AngularVelocityIn" complete="true" kind="portConnection" destination="_RBu1odMYEeSaQc2dAUY7zw" source="_RBxR4tMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCqpwdMYEeSaQc2dAUY7zw" context="_RBvcvtMYEeSaQc2dAUY7zw" source="_RBxR4tMYEeSaQc2dAUY7zw" destination="_RBx48NMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.9"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCqpwtMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBx48NMYEeSaQc2dAUY7zw" destination="_RBvctdMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:FeatureGroupConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedFeatureGroupConnection.0"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCqpw9MYEeSaQc2dAUY7zw" context="_RBtnhdMYEeSaQc2dAUY7zw" source="_RBvctdMYEeSaQc2dAUY7zw" destination="_RBu1odMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedPortConnection.2"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCrQ0NMYEeSaQc2dAUY7zw" name="pi_Input_impl.ti_ReadData.dp_SonarRawOut -> pi_Communication_impl.ti_CommBeaglebone.dp_SonarRawIn" complete="true" kind="portConnection" destination="_RBrLSdMYEeSaQc2dAUY7zw" source="_RBxR5dMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCrQ0dMYEeSaQc2dAUY7zw" context="_RBvcvtMYEeSaQc2dAUY7zw" source="_RBxR5dMYEeSaQc2dAUY7zw" destination="_RBx49dMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.12"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCrQ0tMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBx49dMYEeSaQc2dAUY7zw" destination="_RBtngNMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:FeatureGroupConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedFeatureGroupConnection.1"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCrQ09MYEeSaQc2dAUY7zw" context="_RBjPc9MYEeSaQc2dAUY7zw" source="_RBtngNMYEeSaQc2dAUY7zw" destination="_RBrLSdMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.5/@ownedPortConnection.1"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCse8NMYEeSaQc2dAUY7zw" name="pi_Input_impl.ti_ReadData.dp_PositionOut -> pi_Control_impl.ti_RadioControl.dp_PositionIn" complete="true" kind="portConnection" destination="_RBu1otMYEeSaQc2dAUY7zw" source="_RBxR5tMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCse8dMYEeSaQc2dAUY7zw" context="_RBvcvtMYEeSaQc2dAUY7zw" source="_RBxR5tMYEeSaQc2dAUY7zw" destination="_RBx48dMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.8"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCse8tMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBx48dMYEeSaQc2dAUY7zw" destination="_RBvcttMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:FeatureGroupConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedFeatureGroupConnection.0"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCse89MYEeSaQc2dAUY7zw" context="_RBtnhdMYEeSaQc2dAUY7zw" source="_RBvcttMYEeSaQc2dAUY7zw" destination="_RBu1otMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedPortConnection.1"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCuUINMYEeSaQc2dAUY7zw" name="pi_Input_impl.ti_ReadData.dp_VelocityOut -> pi_Control_impl.ti_RadioControl.dp_VelocityIn" complete="true" kind="portConnection" destination="_RBu1o9MYEeSaQc2dAUY7zw" source="_RBxR59MYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCuUIdMYEeSaQc2dAUY7zw" context="_RBvcvtMYEeSaQc2dAUY7zw" source="_RBxR59MYEeSaQc2dAUY7zw" destination="_RBx48tMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.10"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCuUItMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBx48tMYEeSaQc2dAUY7zw" destination="_RBvct9MYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:FeatureGroupConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedFeatureGroupConnection.0"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCuUI9MYEeSaQc2dAUY7zw" context="_RBtnhdMYEeSaQc2dAUY7zw" source="_RBvct9MYEeSaQc2dAUY7zw" destination="_RBu1o9MYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedPortConnection.3"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCu7MNMYEeSaQc2dAUY7zw" name="pi_Input_impl.ti_ReadData.dp_AtitudeOut -> pi_Control_impl.ti_RadioControl.dp_AtitudeIn" complete="true" kind="portConnection" destination="_RBu1qNMYEeSaQc2dAUY7zw" source="_RBxR6NMYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCu7MdMYEeSaQc2dAUY7zw" context="_RBvcvtMYEeSaQc2dAUY7zw" source="_RBxR6NMYEeSaQc2dAUY7zw" destination="_RBx489MYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.7"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCu7MtMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBx489MYEeSaQc2dAUY7zw" destination="_RBvcuNMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:FeatureGroupConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedFeatureGroupConnection.0"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCu7M9MYEeSaQc2dAUY7zw" context="_RBtnhdMYEeSaQc2dAUY7zw" source="_RBvcuNMYEeSaQc2dAUY7zw" destination="_RBu1qNMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.3/@ownedPortConnection.0"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_RCviQNMYEeSaQc2dAUY7zw" name="pi_Input_impl.ti_ReadData.dp_IMURawOut -> pi_Communication_impl.ti_CommBeaglebone.dp_IMURawIn" complete="true" kind="portConnection" destination="_RBrLUdMYEeSaQc2dAUY7zw" source="_RBxR69MYEeSaQc2dAUY7zw">
+    <connectionReference xmi:id="_RCviQdMYEeSaQc2dAUY7zw" context="_RBvcvtMYEeSaQc2dAUY7zw" source="_RBxR69MYEeSaQc2dAUY7zw" destination="_RBx49tMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.11"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCviQtMYEeSaQc2dAUY7zw" context="_RA-AoNMYEeSaQc2dAUY7zw" source="_RBx49tMYEeSaQc2dAUY7zw" destination="_RBtngdMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:FeatureGroupConnection" href="../packages/lowLevelSubsystem.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedFeatureGroupConnection.1"/>
+    </connectionReference>
+    <connectionReference xmi:id="_RCviQ9MYEeSaQc2dAUY7zw" context="_RBjPc9MYEeSaQc2dAUY7zw" source="_RBtngdMYEeSaQc2dAUY7zw" destination="_RBrLUdMYEeSaQc2dAUY7zw">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/systemProcesses.aadl#//@ownedPublicSection/@ownedClassifier.5/@ownedPortConnection.0"/>
+    </connectionReference>
+  </connectionInstance>
+  <systemOperationMode xmi:id="_RBzuJNMYEeSaQc2dAUY7zw" name="No Modes"/>
+  <componentImplementation xsi:type="aadl2:SystemImplementation" href="../packages/lowLevelSubsystem.aadl#lowLevelSubsystem.LowLevelProcessing.impl"/>
+</instance:SystemInstance>

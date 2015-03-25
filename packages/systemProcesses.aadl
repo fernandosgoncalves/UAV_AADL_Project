@@ -1,0 +1,147 @@
+package systemProcesses
+public
+	with systemThreads;
+	with featuresUAV;
+	process p_Input
+		features
+			dp_AngularVelocityServoOut: out data port;
+			dp_RadioControlSignalOut: out data port;
+			dp_RadioControlIn: in data port;
+			dp_AngleServoOut: out data port;
+			dp_Servo_RInOut: in out data port;
+			dp_Servo_LInOut: in out data port;
+			dp_IMUInOut: in out data port;
+			dp_GPSInOut: in out data port;
+			dp_SonarIn: in data port;
+			pg_UAVBehavior : feature group featuresUAV::pg_UAVBehavior;
+			pg_UAVRawData : feature group featuresUAV::pg_UAVRawData;
+		flows
+		--estimationIMU : flow path dp_IMUInOut -> dp_IMURawOut;
+			none;
+	end p_Input;
+
+	process implementation p_Input.impl
+		subcomponents
+			ti_GPS: thread systemThreads::t_GPS.impl;
+			ti_ReadData: thread systemThreads::t_ReadData.impl;
+		connections
+			DC1 : port dp_GPSInOut -> ti_GPS.dp_GPSInOut;
+			DC2 : port ti_GPS.dp_GPSRawOut -> pg_UAVRawData.dp_GPSRawOut;
+			DC3 : port dp_SonarIn -> ti_ReadData.dp_SonarIn;
+			DC4 : port dp_IMUInOut -> ti_ReadData.dp_IMUInOut;
+			DC5 : port dp_RadioControlIn -> ti_ReadData.dp_RadioControlIn;
+			DC6 : port dp_Servo_RInOut -> ti_ReadData.dp_Servo_RIn;
+			DC7 : port dp_Servo_LInOut -> ti_ReadData.dp_Servo_LIn;
+			DC8 : port ti_ReadData.dp_AtitudeOut -> pg_UAVBehavior.dp_AtitudeOut;
+			DC9 : port ti_ReadData.dp_PositionOut -> pg_UAVBehavior.dp_PositionOut;
+			DC10 : port ti_ReadData.dp_AngularVelocityOut -> pg_UAVBehavior.dp_AngularVelocityOut;
+			DC11 : port ti_ReadData.dp_VelocityOut -> pg_UAVBehavior.dp_VelocityOut;
+			DC12 : port ti_ReadData.dp_IMURawOut -> pg_UAVRawData.dp_IMURawOut;
+			DC13 : port ti_ReadData.dp_SonarRawOut -> pg_UAVRawData.dp_SonarRawOut;
+			DC14 : port ti_ReadData.dp_RadioControlSignalOut -> dp_RadioControlSignalOut;
+			DC15 : port ti_ReadData.dp_AngularVelocityServoOut -> dp_AngularVelocityServoOut;
+			--DC16 : port ti_ReadData.dp_AngleServoOut -> dp_AngleServoOut;
+		flows
+		--estimationIMU : flow path dp_IMUInOut -> DC4 -> ti_ReadData -> DC14 -> dp_IMURawOut;
+			none;
+		modes
+			none;
+		properties
+			none;
+	end p_Input.impl;
+
+	process p_Control
+		features
+			dp_RadioControlSignalIn: in data port;
+			dp_ESC_RInOut: in out data port;
+			dp_ESC_LInOut: in out data port;
+			dp_Servo_ROut: out data port;
+			dp_Servo_LOut: out data port;
+			pg_ControlMessagesIn : feature group featuresUAV::fg_ControlMessagesIn;
+			pg_UAVBehavior : feature group featuresUAV::pg_UAVBehaviorInverse;
+
+		flows
+		--estimationIMU : flow sink dp_IMURawIn;
+			none;
+	end p_Control;
+
+	process implementation p_Control.impl
+		subcomponents
+			ti_RadioControl : thread systemThreads::t_RadioControl.impl;
+		connections
+			DC1 : port pg_UAVBehavior.dp_AtitudeIn -> ti_RadioControl.dp_AtitudeIn;
+			DC2 : port pg_UAVBehavior.dp_PositionIn -> ti_RadioControl.dp_PositionIn;
+			DC3 : port pg_UAVBehavior.dp_AngularVelocityIn -> ti_RadioControl.dp_AngularVelocityIn;
+			DC4 : port pg_UAVBehavior.dp_VelocityIn -> ti_RadioControl.dp_VelocityIn;
+			DC5 : port ti_RadioControl.dp_ForceROut -> dp_ESC_RInOut;
+			DC6 : port ti_RadioControl.dp_ForceLOut -> dp_ESC_LInOut;
+			DC7 : port ti_RadioControl.dp_AngleROut -> dp_Servo_ROut;
+			DC8 : port ti_RadioControl.dp_AngleLOut -> dp_Servo_LOut;
+			DC9 : port dp_RadioControlSignalIn -> ti_RadioControl.dp_RadioControlSignalIn;
+			DC10 : port pg_ControlMessagesIn.dp_Force_RIn -> ti_RadioControl.dp_ForceB_RIn;
+			DC11 : port pg_ControlMessagesIn.dp_Force_LIn -> ti_RadioControl.dp_ForceB_LIn;
+			DC12 : port pg_ControlMessagesIn.dp_Angle_RIn -> ti_RadioControl.dp_ServoB_RIn;
+			DC13 : port pg_ControlMessagesIn.dp_Angle_LIn -> ti_RadioControl.dp_ServoB_LIn;
+		flows
+		--estimationIMU : flow sink dp_IMURawIn -> DC4 -> ti_AutonomousControl;
+			none;
+		modes
+			none;
+		properties
+			none;
+	end p_Control.impl;
+
+	process p_Communication
+		features
+			--dp_AngularVelocityServoOut: out data port;
+			dp_AngularVelocityServoIn: in data port;
+			--dp_AngleServoOut: out data port;
+			dp_AngleServoIn: in data port;
+			--dp_SonarRawOut: out data port;
+			--dp_GPSRawOut: out data port;
+			--dp_IMURawOut: out data port;
+			--dp_Force_RIn: in data port;
+			--dp_Force_LIn: in data port;
+			--dp_Angle_RIn: in data port;
+			--dp_Angle_LIn: in data port;
+			pg_ControlMessagesOut: feature group featuresUAV::fg_ControlMessagesOut;
+			pg_UAVRawData: feature group featuresUAV::pg_UAVRawDataInverse;
+		flows
+		--estimationIMU : flow path dp_IMURawIn -> dp_IMURawOut;
+			none;
+	end p_Communication;
+
+	process implementation p_Communication.impl
+		subcomponents
+			ti_CommBeaglebone: thread systemThreads::t_CommBeaglebone.impl;
+		connections
+			DC1: port pg_UAVRawData.dp_IMURawIn -> ti_CommBeaglebone.dp_IMURawIn;
+			DC2: port pg_UAVRawData.dp_SonarRawIn -> ti_CommBeaglebone.dp_SonarRawIn;
+			DC3: port pg_UAVRawData.dp_GPSRawIn -> ti_CommBeaglebone.dp_GPSRawIn;
+			DC4: port dp_AngleServoIn -> ti_CommBeaglebone.dp_AngleServoIn;
+			--DC5: port dp_Force_RIn -> ti_CommBeaglebone.dp_ForceB_RIn;
+			--DC6: port dp_Force_LIn -> ti_CommBeaglebone.dp_ForceB_LIn;
+			--DC7: port dp_Angle_RIn -> ti_CommBeaglebone.dp_ServoB_RIn;
+			--DC8: port dp_Angle_LIn -> ti_CommBeaglebone.dp_ServoB_LIn;
+			DC9: port dp_AngularVelocityServoIn -> ti_CommBeaglebone.dp_AngularVelocityServoIn;
+			--DC10: port ti_CommBeaglebone.dp_AngularVelocityServoOut -> dp_AngularVelocityServoOut;
+			--DC11: port ti_CommBeaglebone.dp_AngleServoOut -> dp_AngleServoOut;
+			--DC12: port ti_CommBeaglebone.dp_GPSRawOut -> dp_GPSRawOut;
+			--DC13: port ti_CommBeaglebone.dp_IMURawOut -> dp_IMURawOut;
+			--DC14: port ti_CommBeaglebone.dp_SonarRawOut -> dp_SonarRawOut;
+			DC15: port ti_CommBeaglebone.dp_ForceB_ROut -> pg_ControlMessagesOut.dp_Force_RIn;
+			DC16: port ti_CommBeaglebone.dp_ForceB_LOut -> pg_ControlMessagesOut.dp_Force_LIn;
+			DC17: port ti_CommBeaglebone.dp_ServoB_ROut -> pg_ControlMessagesOut.dp_Angle_RIn;
+			DC18: port ti_CommBeaglebone.dp_ServoB_LOut -> pg_ControlMessagesOut.dp_Angle_LIn;
+
+		flows
+		--estimationIMU : flow path dp_IMURawIn -> DC5 -> ti_CommDiscovery -> DC10 -> ti_CommBeaglebone -> DC15 ->
+		--dp_IMURawOut;
+			none;
+		modes
+			none;
+		properties
+			none;
+	end p_Communication.impl;
+
+end systemProcesses;

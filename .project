@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>ArchUAV</name>
+	<name>UAV_AADL_Project</name>
 	<comment></comment>
 	<projects>
 		<project>Plugin_Resources</project>
@@ -14,6 +14,5 @@
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
-		<nature>org.osate.core.aadlnature</nature>
 	</natures>
 </projectDescription>

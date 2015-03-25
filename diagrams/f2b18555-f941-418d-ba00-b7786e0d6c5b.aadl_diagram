@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<pi:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:al="http://eclipse.org/graphiti/mm/algorithms" xmlns:pi="http://eclipse.org/graphiti/mm/pictograms" visible="true" gridUnit="10" diagramTypeId="AADL Package" name="devices" snapToGrid="true" version="0.11.0">
+<pi:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:al="http://eclipse.org/graphiti/mm/algorithms" xmlns:pi="http://eclipse.org/graphiti/mm/pictograms" visible="true" gridUnit="10" diagramTypeId="AADL Package" name="Devices" snapToGrid="true" version="0.11.0">
   <properties key="independentObject" value="package devices"/>
   <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" foreground="//@colors.0" lineWidth="1" transparency="0.0" width="1000" height="1000"/>
   <children xsi:type="pi:ContainerShape" visible="true" active="true">
@@ -42,7 +42,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_ESC_L"/>
+      <properties key="independentObject" value="classifier Devices::d_ESC_L"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_ESC_L"/>
     </children>
   </children>
@@ -86,7 +86,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_RadioWireless.impl"/>
+      <properties key="independentObject" value="classifier Devices::d_RadioWireless.impl"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="168" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_RadioWireless.impl"/>
     </children>
   </children>
@@ -130,7 +130,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_Sonar"/>
+      <properties key="independentObject" value="classifier Devices::d_Sonar"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_Sonar"/>
     </children>
   </children>
@@ -174,7 +174,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_Servo_R.impl"/>
+      <properties key="independentObject" value="classifier Devices::d_Servo_R.impl"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="130" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_Servo_R.impl"/>
     </children>
   </children>
@@ -218,7 +218,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_ESC_R.impl"/>
+      <properties key="independentObject" value="classifier Devices::d_ESC_R.impl"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="119" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_ESC_R.impl"/>
     </children>
   </children>
@@ -262,7 +262,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_IMU.impl"/>
+      <properties key="independentObject" value="classifier Devices::d_IMU.impl"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="101" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_IMU.impl"/>
     </children>
   </children>
@@ -306,7 +306,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_Servo_R"/>
+      <properties key="independentObject" value="classifier Devices::d_Servo_R"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_Servo_R"/>
     </children>
   </children>
@@ -350,7 +350,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_RadioWireless"/>
+      <properties key="independentObject" value="classifier Devices::d_RadioWireless"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="136" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_RadioWireless"/>
     </children>
   </children>
@@ -394,7 +394,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_Servo_L"/>
+      <properties key="independentObject" value="classifier Devices::d_Servo_L"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_Servo_L"/>
     </children>
   </children>
@@ -438,7 +438,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_GPS.impl"/>
+      <properties key="independentObject" value="classifier Devices::d_GPS.impl"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="105" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_GPS.impl"/>
     </children>
   </children>
@@ -482,7 +482,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_ESC_R"/>
+      <properties key="independentObject" value="classifier Devices::d_ESC_R"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_ESC_R"/>
     </children>
   </children>
@@ -526,7 +526,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_IMU"/>
+      <properties key="independentObject" value="classifier Devices::d_IMU"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_IMU"/>
     </children>
   </children>
@@ -570,7 +570,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_RadioControl"/>
+      <properties key="independentObject" value="classifier Devices::d_RadioControl"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="128" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_RadioControl"/>
     </children>
   </children>
@@ -614,7 +614,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_GPS"/>
+      <properties key="independentObject" value="classifier Devices::d_GPS"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_GPS"/>
     </children>
   </children>
@@ -658,7 +658,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_Sonar.impl"/>
+      <properties key="independentObject" value="classifier Devices::d_Sonar.impl"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="115" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_Sonar.impl"/>
     </children>
   </children>
@@ -702,7 +702,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_Servo_L.impl"/>
+      <properties key="independentObject" value="classifier Devices::d_Servo_L.impl"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="129" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_Servo_L.impl"/>
     </children>
   </children>
@@ -746,7 +746,7 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_RadioControl.impl"/>
+      <properties key="independentObject" value="classifier Devices::d_RadioControl.impl"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="160" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_RadioControl.impl"/>
     </children>
   </children>
@@ -790,21 +790,8 @@
     </anchors>
     <children visible="true">
       <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::d_ESC_L.impl"/>
+      <properties key="independentObject" value="classifier Devices::d_ESC_L.impl"/>
       <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="118" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="d_ESC_L.impl"/>
-    </children>
-  </children>
-  <children xsi:type="pi:ContainerShape" visible="true" active="true">
-    <properties key="independentObject" value="classifier devices::Power"/>
-    <properties key="is_layed_out" value="true"/>
-    <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="100" height="50" x="270" y="20" style="//@styles.0/@styles.1"/>
-    <anchors xsi:type="pi:ChopboxAnchor">
-      <properties key="name" value="chopbox"/>
-    </anchors>
-    <children visible="true">
-      <properties key="is_manually_positioned" value="true"/>
-      <properties key="independentObject" value="classifier devices::Power"/>
-      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="Power"/>
     </children>
   </children>
   <styles background="//@colors.1" foreground="//@colors.2" lineWidth="1" lineVisible="true" transparency="0.0" id="classifier" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED">

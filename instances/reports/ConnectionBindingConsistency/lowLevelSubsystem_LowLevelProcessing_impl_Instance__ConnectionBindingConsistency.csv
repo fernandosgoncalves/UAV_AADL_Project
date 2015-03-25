@@ -1,0 +1,66 @@
+Check connection binding consistency Report
+
+Warning: Connection di_Servo_R.dp_Servo_RInOut -> pi_Input_impl.ti_ReadData.dp_Servo_RIn has no actual connection binding to hardware
+Warning: Connection di_Servo_L.dp_Servo_LInOut -> pi_Input_impl.ti_ReadData.dp_Servo_LIn has no actual connection binding to hardware
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_AngularVelocityServoOut -> pi_Communication_impl.dp_AngularVelocityServoOut source or destination is not bound to hardware
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_AngularVelocityServoOut -> pi_Communication_impl.dp_AngularVelocityServoOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Communication_impl.ti_CommBeaglebone.dp_AngularVelocityServoOut -> pi_Communication_impl.dp_AngularVelocityServoOut source and destination are not physically connected"
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_AngleServoOut -> pi_Communication_impl.dp_AngleServoOut source or destination is not bound to hardware
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_AngleServoOut -> pi_Communication_impl.dp_AngleServoOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Communication_impl.ti_CommBeaglebone.dp_AngleServoOut -> pi_Communication_impl.dp_AngleServoOut source and destination are not physically connected"
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_SonarRawOut -> pi_Communication_impl.dp_SonarRawOut source or destination is not bound to hardware
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_SonarRawOut -> pi_Communication_impl.dp_SonarRawOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Communication_impl.ti_CommBeaglebone.dp_SonarRawOut -> pi_Communication_impl.dp_SonarRawOut source and destination are not physically connected"
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_ForceB_ROut -> pi_Communication_impl.pg_ControlMessagesOut.dp_Force_RIn source or destination is not bound to hardware
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_ForceB_ROut -> pi_Communication_impl.pg_ControlMessagesOut.dp_Force_RIn has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Communication_impl.ti_CommBeaglebone.dp_ForceB_ROut -> pi_Communication_impl.pg_ControlMessagesOut.dp_Force_RIn source and destination are not physically connected"
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_ForceB_LOut -> pi_Communication_impl.pg_ControlMessagesOut.dp_Force_LIn source or destination is not bound to hardware
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_ForceB_LOut -> pi_Communication_impl.pg_ControlMessagesOut.dp_Force_LIn has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Communication_impl.ti_CommBeaglebone.dp_ForceB_LOut -> pi_Communication_impl.pg_ControlMessagesOut.dp_Force_LIn source and destination are not physically connected"
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_ServoB_ROut -> pi_Communication_impl.pg_ControlMessagesOut.dp_Angle_RIn source or destination is not bound to hardware
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_ServoB_ROut -> pi_Communication_impl.pg_ControlMessagesOut.dp_Angle_RIn has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Communication_impl.ti_CommBeaglebone.dp_ServoB_ROut -> pi_Communication_impl.pg_ControlMessagesOut.dp_Angle_RIn source and destination are not physically connected"
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_ServoB_LOut -> pi_Communication_impl.pg_ControlMessagesOut.dp_Angle_LIn source or destination is not bound to hardware
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_ServoB_LOut -> pi_Communication_impl.pg_ControlMessagesOut.dp_Angle_LIn has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Communication_impl.ti_CommBeaglebone.dp_ServoB_LOut -> pi_Communication_impl.pg_ControlMessagesOut.dp_Angle_LIn source and destination are not physically connected"
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_GPSRawOut -> pi_Communication_impl.dp_GPSRawOut source or destination is not bound to hardware
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_GPSRawOut -> pi_Communication_impl.dp_GPSRawOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Communication_impl.ti_CommBeaglebone.dp_GPSRawOut -> pi_Communication_impl.dp_GPSRawOut source and destination are not physically connected"
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_IMURawOut -> pi_Communication_impl.dp_IMURawOut source or destination is not bound to hardware
+Warning: Connection pi_Communication_impl.ti_CommBeaglebone.dp_IMURawOut -> pi_Communication_impl.dp_IMURawOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Communication_impl.ti_CommBeaglebone.dp_IMURawOut -> pi_Communication_impl.dp_IMURawOut source and destination are not physically connected"
+Warning: Connection pi_Control_impl.ti_RadioControl.dp_ForceROut -> pi_Control_impl.dp_ESC_RInOut source or destination is not bound to hardware
+Warning: Connection pi_Control_impl.ti_RadioControl.dp_ForceROut -> pi_Control_impl.dp_ESC_RInOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Control_impl.ti_RadioControl.dp_ForceROut -> pi_Control_impl.dp_ESC_RInOut source and destination are not physically connected"
+Warning: Connection pi_Control_impl.ti_RadioControl.dp_ForceLOut -> pi_Control_impl.dp_ESC_LInOut source or destination is not bound to hardware
+Warning: Connection pi_Control_impl.ti_RadioControl.dp_ForceLOut -> pi_Control_impl.dp_ESC_LInOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Control_impl.ti_RadioControl.dp_ForceLOut -> pi_Control_impl.dp_ESC_LInOut source and destination are not physically connected"
+Warning: Connection pi_Control_impl.ti_RadioControl.dp_AngleROut -> di_Servo_R.dp_Servo_RInOut has no actual connection binding to hardware
+Warning: Connection pi_Control_impl.ti_RadioControl.dp_AngleLOut -> di_Servo_L.dp_Servo_LInOut has no actual connection binding to hardware
+Warning: Connection pi_Input_impl.ti_GPS.dp_GPSRawOut -> pi_Input_impl.pg_UAVRawData.dp_GPSRawOut source or destination is not bound to hardware
+Warning: Connection pi_Input_impl.ti_GPS.dp_GPSRawOut -> pi_Input_impl.pg_UAVRawData.dp_GPSRawOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Input_impl.ti_GPS.dp_GPSRawOut -> pi_Input_impl.pg_UAVRawData.dp_GPSRawOut source and destination are not physically connected"
+Warning: Connection pi_Input_impl.ti_ReadData.dp_AngularVelocityServoOut -> pi_Input_impl.dp_AngularVelocityServoOut source or destination is not bound to hardware
+Warning: Connection pi_Input_impl.ti_ReadData.dp_AngularVelocityServoOut -> pi_Input_impl.dp_AngularVelocityServoOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Input_impl.ti_ReadData.dp_AngularVelocityServoOut -> pi_Input_impl.dp_AngularVelocityServoOut source and destination are not physically connected"
+Warning: Connection pi_Input_impl.ti_ReadData.dp_RadioControlSignalOut -> pi_Input_impl.dp_RadioControlSignalOut source or destination is not bound to hardware
+Warning: Connection pi_Input_impl.ti_ReadData.dp_RadioControlSignalOut -> pi_Input_impl.dp_RadioControlSignalOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Input_impl.ti_ReadData.dp_RadioControlSignalOut -> pi_Input_impl.dp_RadioControlSignalOut source and destination are not physically connected"
+Warning: Connection pi_Input_impl.ti_ReadData.dp_AngularVelocityOut -> pi_Input_impl.pg_UAVBehavior.dp_AngularVelocityOut source or destination is not bound to hardware
+Warning: Connection pi_Input_impl.ti_ReadData.dp_AngularVelocityOut -> pi_Input_impl.pg_UAVBehavior.dp_AngularVelocityOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Input_impl.ti_ReadData.dp_AngularVelocityOut -> pi_Input_impl.pg_UAVBehavior.dp_AngularVelocityOut source and destination are not physically connected"
+Warning: Connection pi_Input_impl.ti_ReadData.dp_SonarRawOut -> pi_Input_impl.pg_UAVRawData.dp_SonarRawOut source or destination is not bound to hardware
+Warning: Connection pi_Input_impl.ti_ReadData.dp_SonarRawOut -> pi_Input_impl.pg_UAVRawData.dp_SonarRawOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Input_impl.ti_ReadData.dp_SonarRawOut -> pi_Input_impl.pg_UAVRawData.dp_SonarRawOut source and destination are not physically connected"
+Warning: Connection pi_Input_impl.ti_ReadData.dp_PositionOut -> pi_Input_impl.pg_UAVBehavior.dp_PositionOut source or destination is not bound to hardware
+Warning: Connection pi_Input_impl.ti_ReadData.dp_PositionOut -> pi_Input_impl.pg_UAVBehavior.dp_PositionOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Input_impl.ti_ReadData.dp_PositionOut -> pi_Input_impl.pg_UAVBehavior.dp_PositionOut source and destination are not physically connected"
+Warning: Connection pi_Input_impl.ti_ReadData.dp_VelocityOut -> pi_Input_impl.pg_UAVBehavior.dp_VelocityOut source or destination is not bound to hardware
+Warning: Connection pi_Input_impl.ti_ReadData.dp_VelocityOut -> pi_Input_impl.pg_UAVBehavior.dp_VelocityOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Input_impl.ti_ReadData.dp_VelocityOut -> pi_Input_impl.pg_UAVBehavior.dp_VelocityOut source and destination are not physically connected"
+Warning: Connection pi_Input_impl.ti_ReadData.dp_AtitudeOut -> pi_Input_impl.pg_UAVBehavior.dp_AtitudeOut source or destination is not bound to hardware
+Warning: Connection pi_Input_impl.ti_ReadData.dp_AtitudeOut -> pi_Input_impl.pg_UAVBehavior.dp_AtitudeOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Input_impl.ti_ReadData.dp_AtitudeOut -> pi_Input_impl.pg_UAVBehavior.dp_AtitudeOut source and destination are not physically connected"
+Warning: Connection pi_Input_impl.ti_ReadData.dp_IMURawOut -> pi_Input_impl.pg_UAVRawData.dp_IMURawOut source or destination is not bound to hardware
+Warning: Connection pi_Input_impl.ti_ReadData.dp_IMURawOut -> pi_Input_impl.pg_UAVRawData.dp_IMURawOut has no actual connection binding to hardware
+"ERROR: Hardware (processor or device) of connection pi_Input_impl.ti_ReadData.dp_IMURawOut -> pi_Input_impl.pg_UAVRawData.dp_IMURawOut source and destination are not physically connected"
