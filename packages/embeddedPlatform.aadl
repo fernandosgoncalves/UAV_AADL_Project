@@ -1,0 +1,93 @@
+package embeddedPlatform
+public
+	with SEI;
+	processor armCortexM4
+		features
+			BI2C1: requires bus access I2C_1;
+			BI2C2: requires bus access I2C_2;
+			BRS2321: requires bus access rs232_1;
+			BRS2322: requires bus access rs232_2;
+			BRS2323: requires bus access rs232_3;
+	end armCortexM4;
+
+	processor implementation armCortexM4.impl
+		subcomponents
+			thisRam : memory ram.impl;	
+		Properties
+			scheduling_protocol => (RMS);
+			Preemptive_Scheduler => true;
+			SEI::MIPSCapacity => 210.0 MIPS;
+	end armCortexM4.impl;
+
+	memory ram
+	end ram;
+
+	memory implementation ram.impl
+	end ram.impl;
+
+	-- Bus definition
+	bus I2C_1
+	end I2c_1;
+
+	bus implementation I2C_1.impl
+	end I2c_1.impl;
+
+	bus I2C_2
+	end I2c_2;
+
+	bus implementation I2C_2.impl
+	end I2c_2.impl;
+
+	bus SPI
+	end SPI;
+
+	bus implementation SPI.impl
+	end SPI.impl;
+
+	bus RS232_1
+		features
+			busAccess: requires bus access rs485; 
+		properties
+			Latency => 1 Ms .. 1 Ms;
+			SEI::BandWidthCapacity => 5.0 KBytesps;
+			Transmission_Time => [Fixed => 200 ms .. 500 ms;
+						PerByte => 2 ms .. 5 ms;];
+	end RS232_1;
+	
+	bus implementation RS232_1.impl
+	end RS232_1.impl;
+
+	bus RS232_2
+		properties
+			Latency => 1 Ms .. 1 Ms;
+			SEI::BandWidthCapacity => 5.0 KBytesps;
+			Transmission_Time => [Fixed => 200 ms .. 500 ms;
+						PerByte => 2 ms .. 5 ms;];
+	end RS232_2;
+	
+	bus implementation RS232_2.impl
+	end RS232_2.impl;
+
+	bus RS232_3
+		properties
+			Latency => 1 Ms .. 1 Ms;
+			SEI::BandWidthCapacity => 5.0 KBytesps;
+			Transmission_Time => [Fixed => 200 ms .. 500 ms;
+						PerByte => 2 ms .. 5 ms;];
+	end RS232_3;
+
+	bus implementation RS232_3.impl
+	end RS232_3.impl;
+
+	bus RS485
+		properties
+			Latency => 1 Ms .. 1 Ms;
+			SEI::BandWidthCapacity => 5.0 KBytesps;
+			Transmission_Time => [Fixed => 200 ms .. 500 ms;
+						PerByte => 2 ms .. 5 ms;];
+	end RS485;
+
+	bus implementation RS485.impl
+	end RS485.impl;
+
+end embeddedPlatform;

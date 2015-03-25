@@ -1,0 +1,162 @@
+package devices
+public
+	with embeddedPlatform;
+
+	device d_GPS
+		features
+			dp_GPSInOut: in out data port;
+			busAccess: requires bus access embeddedPlatform::rs232_2;
+		flows
+			raw_data: flow source dp_GPSInOut;
+		modes
+			none;
+		properties
+			Period => 100 ms;
+			Deadline => 100 ms;
+			--Compute_Execution_Time => 20us .. 50us;
+
+	end d_GPS;
+
+	device implementation d_GPS.impl
+	end d_GPS.impl;
+
+	device d_Sonar
+		features
+			dp_SonarOut: out data port;
+			busAccess : requires bus access embeddedPlatform::rs232_3;
+		flows
+			none;
+		modes
+			none;
+		properties
+			Period => 2500 us;
+			Deadline => 2500 us;
+			--Compute_Execution_Time => 20ms .. 50ms;
+	end d_Sonar;
+	
+	device implementation d_Sonar.impl
+	end d_Sonar.impl;
+	
+	device d_IMU
+		features
+			dp_IMUInOut: in out data port;
+			busAccess : requires bus access embeddedPlatform::I2C_2;
+		flows
+			raw_data_IMU: flow source dp_IMUInOut;
+		modes
+			none;
+		properties
+			Period => 2500 us;
+			Deadline => 2500 us;
+			--Compute_Execution_Time => 20ms .. 50ms;	
+	end d_IMU;
+	
+	device implementation d_IMU.impl
+	end d_IMU.impl;
+
+	device d_RadioControl
+		features
+			dp_RadioControlOut: out data port;
+		flows
+			none;
+		modes
+			none;
+		properties
+			Period => 2500 us;
+			Deadline => 2500 us;
+			--Compute_Execution_Time => 20ms .. 50ms;	
+	end d_RadioControl;
+	
+	device implementation d_RadioControl.impl
+	end d_RadioControl.impl;
+
+	device d_RadioWireless
+		features
+			dp_RadioWirelessInOut: in out data port;
+		flows
+			none;
+		modes
+			none;
+		properties
+			none;
+	end d_RadioWireless;
+	
+	device implementation d_RadioWireless.impl
+	end d_RadioWireless.impl;
+
+	device d_ESC_R
+		features
+			dp_ESC_RInOut: in out data port;
+			busAccess : requires bus access embeddedPlatform::I2C_1;
+		flows
+			none;
+		modes
+			none;
+		properties
+			Period => 5 ms;
+			Deadline => 5 ms;
+			--Compute_Execution_Time => 20ms .. 50ms;		
+	end d_ESC_R;
+	
+	device implementation d_ESC_R.impl
+	end d_ESC_R.impl;
+
+	device d_ESC_L
+		features
+			dp_ESC_LInOut: in out data port;
+			busAccess : requires bus access embeddedPlatform::I2C_1;
+		flows
+			none;
+		modes
+			none;
+		properties
+			Period => 5 ms;
+			Deadline => 5 ms;
+			--Compute_Execution_Time => 20ms .. 50ms;
+	end d_ESC_L;
+	
+	device implementation d_ESC_L.impl
+	end d_ESC_L.impl;
+	
+	device d_Servo_R
+		features
+			dp_Servo_RIn: in data port;
+			dp_Servo_ROut: out data port;
+			busAccess : requires bus access embeddedPlatform::rs485;
+		flows
+			none;
+		modes
+			none;
+		properties
+			Period => 5 ms;
+			Deadline => 5 ms;
+			--Compute_Execution_Time => 20ms .. 50ms;		
+
+	end d_Servo_R;
+	
+	device implementation d_Servo_R.impl
+	end d_Servo_R.impl;
+	
+	device d_Servo_L
+		features
+			dp_Servo_LIn: in data port;
+			dp_Servo_LOut: out data port;
+			busAccess : requires bus access embeddedPlatform::rs485;
+		flows
+			none;
+		modes
+			none;
+		properties
+			Period => 5 ms;
+			Deadline => 5 ms;
+			--Compute_Execution_Time => 20ms .. 50ms;		
+
+	end d_Servo_L;
+
+	device implementation d_Servo_L.impl
+	end d_Servo_L.impl;
+
+	abstract Power
+	end Power;
+
+end devices;
