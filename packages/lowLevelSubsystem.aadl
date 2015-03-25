@@ -46,6 +46,8 @@ public
 			DC12: feature group pi_Input_impl.pg_UAVRawData -> pi_Communication_impl.pg_UAVRawData;
 			DC13: feature group pi_Communication_impl.pg_ControlMessagesOut -> pi_Control_impl.pg_ControlMessagesIn;
 			DC14: port pi_Input_impl.dp_RadioControlSignalOut -> pi_Control_impl.dp_RadioControlSignalIn;
+			DC15: port pi_Input_impl.dp_AngleServoOut -> pi_Communication_impl.dp_AngleServoIn;
+			DC16: port pi_Input_impl.dp_AngularVelocityServoOut -> pi_Communication_impl.dp_AngularVelocityServoIn;
 			--DC9: port pi_Control_impl.dp_Servo_LOut -> di_Servo_L.dp_Servo_LIn;
 			--DC10: port pi_Control_impl.dp_Servo_ROut -> di_Servo_R.dp_Servo_RIn;
 			--DC14: port fg_SystemMessagesIn.dp_Force_RIn -> pi_Communication_impl.dp_Force_RIn;
@@ -57,8 +59,6 @@ public
 			--DC20: port pi_Communication_impl.dp_AngleServoOut -> fg_SystemMessagesOut.dp_AngleServoOut;
 			--DC21: port pi_Communication_impl.dp_IMURawOut -> fg_SystemMessagesOut.dp_IMURawOut;
 			--DC22: port pi_Communication_impl.dp_SonarRawOut -> fg_SystemMessagesOut.dp_SonarRawOut;
-			DC15: port pi_Input_impl.dp_AngleServoOut -> pi_Communication_impl.dp_AngleServoIn;
-			DC16: port pi_Input_impl.dp_AngularVelocityServoOut -> pi_Communication_impl.dp_AngularVelocityServoIn;
 
 			busI2C1Processor: bus access thisI2C1 -> DISCOVERY_ARM.BI2C1;
 			busI2C2Processor: bus access thisI2C2 -> DISCOVERY_ARM.BI2C2;

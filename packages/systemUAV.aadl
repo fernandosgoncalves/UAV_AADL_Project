@@ -1,0 +1,13 @@
+package systemUAV
+public
+	with lowLevelSubsystem;
+	with highLevelSubsystem;
+	system uavSystem
+	end uavSystem;
+
+	system implementation uavSystem.impl
+		subcomponents
+			si_lowlevel: system lowLevelSubsystem::LowLevelProcessing.impl;
+			si_highlevel: system highlevelSubsystem::HighLevelProcessing.impl;
+	end uavSystem.impl;
+end systemUAV;
