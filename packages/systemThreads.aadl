@@ -1,0 +1,132 @@
+package systemThreads
+public
+		thread t_GPS
+	features
+		dp_GPSRawOut : out data port;
+		dp_GPSInOut : in out data port;
+	end t_GPS;
+	
+	thread implementation t_GPS.impl
+	subcomponents
+		none;
+	connections
+		none;
+	flows
+		none;
+	modes
+		none;
+	properties
+		Dispatch_Protocol => periodic;
+		Period => 100 ms;
+		Deadline => 100 ms;
+		--reference_processor => classifier (Execution_Plataform::cpu.impl);
+	end t_GPS.impl;
+	
+	thread t_ReadData
+	features
+		dp_AngularVelocityServoOut : out data port;
+		dp_RadioControlSignalOut : out data port;
+		dp_AngularVelocityOut : out data port;
+		dp_RadioControlIn : in data port;
+		dp_AngleServoOut : out data port;
+		dp_SonarRawOut : out data port;
+		dp_PositionOut : out data port;
+		dp_VelocityOut : out data port;
+		dp_AtitudeOut : out data port;
+		dp_Servo_RIn : in data port;
+		dp_Servo_LIn : in data port;
+		dp_IMURawOut : out data port;
+		dp_IMUInOut : in out data port;								
+		dp_SonarIn : in data port;
+	end t_ReadData;
+	
+	thread implementation t_ReadData.impl
+	subcomponents
+		none;
+	connections
+		none;
+	flows
+		none;
+	modes
+		none;
+	properties
+		Dispatch_Protocol => periodic;
+		Period =>  2500 us;
+		Deadline => 2500 us;
+		Compute_Execution_Time => 940us .. 1050us;
+		--reference_processor => classifier (Execution_Plataform::cpu.impl);
+	end t_ReadData.impl;
+	
+	thread t_CommBeaglebone
+	features
+		dp_AngularVelocityServoOut : out data port;
+		dp_AngularVelocityServoIn : in data port;
+		dp_AngleServoOut : out data port;		
+		dp_AngleServoIn : in data port;
+		dp_SonarRawOut : out data port;
+		dp_ForceB_ROut : out data port;
+		dp_ForceB_LOut : out data port;
+		dp_ServoB_ROut : out data port;
+		dp_ServoB_LOut : out data port;
+		dp_SonarRawIn : in data port;
+		dp_ForceB_RIn : in data port;
+		dp_ForceB_LIn : in data port;
+		dp_ServoB_RIn : in data port;
+		dp_ServoB_LIn : in data port;
+		dp_GPSRawOut : out data port;
+		dp_IMURawOut : out data port;
+		dp_GPSRawIn : in data port;
+		dp_IMURawIn : in data port;		
+	end t_CommBeaglebone;
+		
+	thread implementation t_CommBeaglebone.impl
+	subcomponents
+		none;
+	connections
+		none;
+	flows
+		none;
+	modes
+		none;
+	properties
+		Dispatch_Protocol => periodic;
+		Period => 100 ms;
+		Deadline => 100ms;
+		Compute_Execution_Time => 3900us .. 4010us;
+		--reference_processor => classifier (Execution_Plataform::cpu.impl);
+	end t_CommBeaglebone.impl;
+		
+	thread t_RadioControl
+	features
+		dp_RadioControlSignalIn : in data port;
+		dp_AngularVelocityIn : in data port;
+		dp_PositionIn : in data port;
+		dp_VelocityIn : in data port;
+		dp_ForceB_RIn : in data port;
+		dp_ForceB_LIn : in data port;
+		dp_ServoB_RIn : in data port;
+		dp_ServoB_LIn : in data port;
+		dp_AtitudeIn : in data port;
+		dp_ForceROut : out data port;
+		dp_ForceLOut : out data port;
+		dp_AngleROut : out data port;
+		dp_AngleLOut : out data port;		
+	end t_RadioControl;
+		
+	thread implementation t_RadioControl.impl
+	subcomponents
+		none;
+	connections
+		none;
+	flows
+		none;
+	modes
+		none;
+	properties
+		Dispatch_Protocol => periodic;
+		Period => 5 ms;
+		Deadline => 5ms;
+		Compute_Execution_Time => 800us .. 1150us;
+		--reference_processor => classifier (Execution_Plataform::cpu.impl);		
+	end t_RadioControl.impl;
+end systemThreads;

@@ -14,7 +14,6 @@ public
 			Period => 100 ms;
 			Deadline => 100 ms;
 			--Compute_Execution_Time => 20us .. 50us;
-
 	end d_GPS;
 
 	device implementation d_GPS.impl
@@ -120,8 +119,8 @@ public
 	
 	device d_Servo_R
 		features
-			dp_Servo_RIn: in data port;
-			dp_Servo_ROut: out data port;
+			dp_Servo_RInOut: in out data port;
+			--dp_Servo_ROut: out data port;
 			busAccess : requires bus access embeddedPlatform::rs485;
 		flows
 			none;
@@ -139,8 +138,8 @@ public
 	
 	device d_Servo_L
 		features
-			dp_Servo_LIn: in data port;
-			dp_Servo_LOut: out data port;
+			dp_Servo_LInOut: in out data port;
+			--dp_Servo_LOut: out data port;
 			busAccess : requires bus access embeddedPlatform::rs485;
 		flows
 			none;
