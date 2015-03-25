@@ -1,0 +1,44 @@
+package lowLevelSubsystem
+public
+	with embeddedPlatform;
+	with devices;
+
+	system LowLevelProcessing
+		--features 
+		---I2Cbusaccess: provides bus access embeddedPlatform::I2C_1.impl;
+	end LowLevelProcessing;
+
+	system implementation LowLevelProcessing.impl
+		subcomponents
+			di_Servo_R: device devices::d_Servo_R.impl;
+			di_Servo_L: device devices::d_Servo_L.impl;
+			di_Sonar: device devices::d_Sonar.impl;
+			di_ESC_R: device devices::d_ESC_R.impl;
+			di_ESC_L: device devices::d_ESC_L.impl;
+			di_GPS: device devices::d_GPS.impl;
+			di_IMU: device devices::d_IMU.impl;
+			
+			DISCOVERY_ARM: processor embeddedPlatform::armCortexM4.impl;
+    		thisI2C1: bus embeddedPlatform::I2C_1.impl;
+    		thisI2C2: bus embeddedPlatform::I2C_2.impl;
+    		thisRS2321: bus embeddedPlatform::RS232_1.impl;
+    		thisRS2322: bus embeddedPlatform::RS232_2.impl;
+    		thisRS2323: bus embeddedPlatform::RS232_3.impl;
+    		thisRS485: bus embeddedPlatform::RS485.impl;
+	connections
+		busI2C1Processor: bus access thisI2C1 -> DISCOVERY_ARM.BI2C1;
+		busI2C2Processor: bus access thisI2C2 -> DISCOVERY_ARM.BI2C2;
+		busRS2321Processor: bus access thisRS2321 -> DISCOVERY_ARM.BRS2321;
+		busRS2322Processor: bus access thisRS2322 -> DISCOVERY_ARM.BRS2322;
+		busRS2323Processor: bus access thisRS2323 -> DISCOVERY_ARM.BRS2323;
+		busRS485Access: bus access thisRS485 -> thisRS2321.busAccess;
+		bus_ESCL: bus access thisI2C1 -> di_ESC_L.busAccess;
+		bus_ESCR: bus access thisI2C1 -> di_ESC_R.busAccess;
+		bus_IMU: bus access thisI2C2 -> di_IMU.busAccess;
+		bus_ServoR: bus access thisRS485 -> di_Servo_R.busAccess;
+		bus_ServoL: bus access thisRS485 -> di_Servo_L.busAccess;
+		bus_GPS: bus access thisRS2322 -> di_GPS.busAccess;
+		bus_Sonar: bus access thisRS2323 -> di_Sonar.busAccess;
+end LowLevelProcessing.impl;
+
+end lowLevelSubsystem;
